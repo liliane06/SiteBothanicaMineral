@@ -42,8 +42,7 @@ html {
   padding: 0;
 }
 .back-cover,
-.bg-imagem-tec,
-.back-acoes {
+.bg-imagem-tec {
   background-size: cover;
 }
 .back-contain,
@@ -121,14 +120,15 @@ p,
 #acoes ul li::before {
   content: "• ";
   font-size: 28px;
-  color: #29713d;
+  color: ;
 }
 @media screen and (max-width: 768px) {
   #acoes ul li {
     padding-left: 1em;
   }
 }
-.uppercase {
+.uppercase,
+.mainTitle {
   text-transform: uppercase;
 }
 .light,
@@ -249,20 +249,14 @@ h6 {
 .font-extra-large {
   font-size: 20px;
 }
-.bg-black {
-  background-color: #333;
-}
 .bg-text {
   background-color: 'black';
 }
 .bg-inverse {
   background-color: #fff;
 }
-.bg-fundo {
-  background-color: #f9f9f9;
-}
-.bg-verde-bm {
-  background-color: #29713d;
+.bg-main {
+  background-color: #005620;
 }
 .bg-cinza {
   background-color: #58595c;
@@ -273,9 +267,6 @@ h6 {
 .bg-light-gray {
   background-color: #f9f9f9;
 }
-.text-black {
-  color: #333;
-}
 .text-text {
   color: 'black';
 }
@@ -283,11 +274,9 @@ h6 {
 footer {
   color: #fff;
 }
-.text-fundo {
-  color: #f9f9f9;
-}
-.text-verde-bm {
-  color: #29713d;
+.text-main,
+.mainTitle {
+  color: #005620;
 }
 .text-cinza {
   color: #58595c;
@@ -305,7 +294,7 @@ body {
   overflow-x: hidden;
 }
 blockquote {
-  border-left: 5px solid;
+  border-left: 5px solid #005620;
 }
 .flex {
   display: -webkit-box;
@@ -327,7 +316,7 @@ select.form-control,
 textarea.form-control {
   border-radius: 0px;
   border: 1px solid transparent;
-  color: #333;
+  color: ;
   text-align: center;
   background-color: #f8f8f8;
 }
@@ -351,13 +340,13 @@ input.is-error,
 select.is-error,
 textarea.is-error {
   border: 2px solid #de4040;
-  color: #333;
+  color: ;
 }
 input.is-valid,
 select.is-valid,
 textarea.is-valid {
   border: 2px solid;
-  color: #333;
+  color: ;
 }
 input[type="file"] {
   border: 0;
@@ -970,7 +959,6 @@ header {
   height: auto;
   background-image: url("../img/back-topo.jpg");
   background-repeat: repeat-x;
-  padding-top: 7px;
 }
 header .container {
   padding-bottom: 8px;
@@ -994,7 +982,6 @@ header .rede-sociais > a {
 @media screen and (max-width: 768px) {
   header {
     height: auto;
-    padding-top: 10px;
   }
   header .container {
     padding-bottom: 5px;
@@ -1026,29 +1013,32 @@ header .rede-sociais > a {
   background-repeat: no-repeat;
   background-position: center center;
 }
+.cat {
+  box-shadow: 0 0 3px #d3d3d3;
+  padding: 30px;
+  margin: 0 20px;
+  margin-top: 20px;
+}
+.cat p {
+  margin: 0;
+  padding: 0;
+}
+.tec-texto {
+  margin-top: 50px;
+}
 .list-acoes {
   margin-top: 40px;
 }
 .bg-imagem-tec {
-  background-image: url("../img/background-meio.png");
-  background-position: center;
+  background-image: url("../img/fundo-footer.jpg");
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.back-acoes {
-  background-image: url("../img/background-moleculas.png");
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 #c-banner {
   padding-top: 80px;
   z-index: 999;
   position: relative;
-}
-.caixa-leort {
-  position: absolute;
-  z-index: 3;
-  margin-left: -230px;
 }
 .icon-acoes {
   max-width: 50px;
@@ -1145,7 +1135,7 @@ header .rede-sociais > a {
 }
 .marca {
   font-weight: 500;
-  color: #29713d;
+  color: ;
 }
 .marca .text-banner-2 p {
   line-height: 1;
@@ -1245,7 +1235,7 @@ header .rede-sociais > a {
     margin: auto;
   }
   #c-banner {
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .text-leort {
     margin-top: 20px;
@@ -1288,6 +1278,11 @@ header .rede-sociais > a {
     bottom: -20px;
     max-width: 420px;
     left: -120px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .img-back-leort img {
+    max-width: 220px;
   }
 }
 .ir-topo {
@@ -1431,11 +1426,11 @@ footer .logo-footer {
   transition: 0.3s;
 }
 .display-menu-mob li a:hover {
-  color: #29713d;
+  color: ;
   font-weight: bold;
 }
 .display-menu-mob li a.ativo {
-  color: #29713d;
+  color: ;
   font-weight: bold;
 }
 .display-menu {
@@ -1450,7 +1445,7 @@ footer .logo-footer {
   list-style: none;
   text-transform: uppercase;
   margin-left: 35px;
-  padding-top: 8px;
+  padding-top: 12px;
 }
 .display-menu li a {
   text-decoration: none;
@@ -1458,15 +1453,16 @@ footer .logo-footer {
   transition: 0.3s;
 }
 .display-menu li a:hover {
-  color: #29713d;
+  color: ;
   font-weight: bold;
 }
 .display-menu li a.ativo {
-  color: #29713d;
+  color: ;
   font-weight: bold;
 }
 .menu-mob {
   cursor: pointer;
+  margin-top: 12px;
 }
 .menu-mob span.icon-bar {
   margin-top: 4px;

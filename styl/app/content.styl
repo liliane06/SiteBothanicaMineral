@@ -1,4 +1,8 @@
 
+.mainTitle
+    @extends .uppercase
+    @extends .text-main
+
 .banners
     @extends .padding-zero
 .img-back-leort
@@ -8,28 +12,32 @@
     background-position: center center
 
 
+.cat
+    box-shadow 0 0 3px lightgray
+    padding 30px
+    margin 0 20px
+    margin-top 20px
+    p
+        margin 0
+        padding 0
+
+.tec-texto
+    margin-top: 50px
+
 .list-acoes
     margin-top 40px
 
 .bg-imagem-tec
     @extends .back-cover
-    background-image: url('../img/background-meio.png')
-    background-position: center;
+    background-image: url('../img/fundo-footer.jpg')
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-.back-acoes
-    @extends .back-cover
-    background-image: url('../img/background-moleculas.png')
-    background-repeat: no-repeat;
-    background-position: center center;
 #c-banner
     padding-top: 80px;
     z-index: 999;
     position: relative;
-.caixa-leort
-    position: absolute
-    z-index 3
-    margin-left: -230px
+
 
 .icon-acoes
     max-width 50px
@@ -201,7 +209,7 @@
     img.leort-banner1
         margin auto
     #c-banner
-        padding-top 20px        
+        padding-top 10px        
     .text-leort
         margin-top: 20px
 
@@ -238,4 +246,9 @@
         bottom: -20px;     
         max-width: 420px;     
         left: -120px;
+
+
+@media screen and (max-width: 340px)
+    .img-back-leort img
+        max-width 220px
         
