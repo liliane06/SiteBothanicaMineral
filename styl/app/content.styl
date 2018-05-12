@@ -15,24 +15,32 @@
 .cat
     box-shadow 0 0 3px lightgray
     padding 30px
-    margin 0 20px
+    background #f7f7f7
+    margin 0 10px
     margin-top 20px
+    width 19%
+    flex 1
+    transition 0.4 filter
+    &:hover 
+        img
+            filter brightness(2)
     p
         margin 0
         padding 0
+        line-height 1
+        margin-top 10px
+        color $colors['main']
 
 .tec-texto
     margin-top: 50px
 
-.list-acoes
-    margin-top 40px
 
 .bg-imagem-tec
     @extends .back-cover
     background-image: url('../img/fundo-footer.jpg')
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 #c-banner
     padding-top: 80px;
     z-index: 999;
@@ -56,6 +64,12 @@
     margin-top: 10px
     margin-bottom: 30px
 
+.argila-title 
+    text-transform uppercase
+    font-weight 100
+    letter-spacing 2px
+.item-artigos
+    padding 25px
 
 .text-leort
     margin-top: 130px
@@ -80,43 +94,8 @@
     background-position: center center
     background-size: contain
     height 2px
-.line-h3
-    @extends .line-small
-    max-width 450px
-    height 3px
-.line-width
-    max-width 150px;
-    margin: auto
-    height 2px
-    background-image: url(../img/linha-verde.png)
-    background-position: center center
-    background-size: contain
 
-.line-width-big
-    width: 400px;
-    height 2px
-    background-image: url(../img/linha-verde.png)
 
-.arrowsPlace
-    width: 120px
-    height 40px;
-    position relative
-    right 0
-    float right 
-
-#leort
-    margin-top 100px
-    .unico
-        font-size: 40px
-
-#acoes
-    padding-top 80px
-    padding-bottom: 80px
-
-.pos-fixed
-    position: fixed;
-    z-index: 99999;
-    width: 100%;
 
 .leort-image-text
     padding-top 180px
@@ -124,16 +103,6 @@
     .segredo
         padding-top 40px
 
-.marca
-    font-weight: 500
-    color: $colors['verde-bm']
-    .text-banner-2
-        p
-            line-height: 1
-            text-align: center
-        img
-            margin auto
-            margin-top 20px
 
 .text-banner-2
     margin-top 25px
@@ -147,13 +116,6 @@
     img
         margin-top 20px
 
-.cursos-todos
-    padding 30px 5px
-
-.bottom-line
-    z-index 9
-    position relative
-    margin-top -40px
 
 .texto-banner-1
     font-size: 30px
@@ -174,6 +136,10 @@
         right -10px
 
 @media screen and (max-width: $queries['medium'])
+    .cat
+        width 50%
+
+
     .bandeira
         bottom: -20px;
         max-width: 450px;
@@ -196,13 +162,6 @@
     .leort-image-text
         padding-top 60px
         padding-bottom: 60px
-    #leort
-        margin-top 50px
-        margin-bottom: 0
-    #acoes
-        margin-top 0px
-        padding-top: 40px;
-        padding-bottom: 50px;
     .img-back-leort
         text-align: center
 
@@ -224,6 +183,8 @@
         right 0
 
 @media screen and (max-width: $queries['small'])
+    .cat
+        width 99%
     .leort-desc
         margin-top 40px
     //tetste
@@ -250,5 +211,5 @@
 
 @media screen and (max-width: 340px)
     .img-back-leort img
-        max-width 220px
+        max-width 200px
         

@@ -6,6 +6,7 @@
     $('#c-banner').slick({
         dots: false,
         infinite: true,
+        arrows:true,
         speed: 500,
         fade: true,
         cssEase: 'linear',
@@ -49,6 +50,12 @@
         }
     }
 
+    function bannerSize(){
+        var banner = $('#banners');
+        var header = $('header').height();
+        $(banner).css('min-height', window.innerHeight - header)
+    }
+
     window.addEventListener('scroll', function(e){
         menuLeort(e);
         mostrarIrTopo(e);
@@ -71,6 +78,7 @@
     //esse evento acontece quando toda a página é carregada
     window.addEventListener('load', function(){
         $('#loader').fadeOut(200);
-        Brilho(document.getElementById('brilho'), $('.line-gold').width(), 1);
+        bannerSize();
+
     })
 })($)
