@@ -72,8 +72,13 @@ html(lang="pt")
                                     a(class="link-topo",href="#", class="goesTo") SOBRE
                                 li 
                                     a(class="link-topo",href="#", class="goesTo") bm.com.vc
-                                li    
-                                    img(src="img/lupa.png", alt="")
+                                li
+                                    img.img-lang(src="img/br.png", alt="Escolha a lingua")  
+                                    select#lang(name="language")
+                                        option(value="PT") PT
+                                        option(value="EN") EN
+                                        option(value="ES") ES
+
                         // Navegação para mob
                         nav.visible-xs.visible-sm
                                 .menu-mob
@@ -81,7 +86,12 @@ html(lang="pt")
                                     span.icon-bar  
                                     span.icon-bar                   
 
-
+                    .language-w.col-xs-3.visible-xs.visible-sm
+                        img.img-lang(src="img/br.png", alt="Escolha a lingua")  
+                        select#lang(name="language")
+                            option(value="PT") PT
+                            option(value="EN") EN
+                            option(value="ES") ES                       
 
             .line-verde#menu-topo
                 canvas#brilho.absolute
