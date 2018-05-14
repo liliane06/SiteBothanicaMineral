@@ -29,7 +29,9 @@
         padding 0
         line-height 1
         margin-top 10px
-        color $colors['main']
+        letter-spacing -0.2px
+        color: $colors['main']
+        font-weight 300
 
 .tec-texto
     margin-top: 50px
@@ -183,6 +185,10 @@
         right 0
 
 @media screen and (max-width: $queries['small'])
+    .seta-left
+        left 0
+    .seta-right
+        right 0
     .cat
         width 99%
     .leort-desc
@@ -202,7 +208,17 @@
         .text-banner
             img
                 margin: auto
+
+@media screen and (max-width: 1024px)
+    .language-w
+        margin-top 10px
+    .seta-left
+        left 0
+    .seta-right
+        right 0
 @media screen and (max-width: 390px)
+    .language-w
+        margin-top 0
     .bandeira
         bottom: -20px;     
         max-width: 420px;     
