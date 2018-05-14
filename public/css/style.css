@@ -1698,5 +1698,44 @@ label[for="email"]:before {
   background-repeat: no-repeat;
   background-size: auto;
 }
+.curso-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.curso-flex > * {
+  width: 33.33333%;
+  border: 1px solid #fff;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.curso-flex > .oneLine {
+  width: 100%;
+}
+.cursos-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.cursos-flex > * {
+  width: 23%;
+  padding: 20px;
+  border: 1px solid #d3d3d3;
+  font-size: 1.6rem;
+  box-shadow: 2px 2px 2px #d3d3d3;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.cursos-flex > * p {
+  margin: 0;
+}
 
 /*# sourceMappingURL=maps/style.css.map */

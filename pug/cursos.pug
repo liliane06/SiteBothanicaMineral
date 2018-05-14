@@ -1,0 +1,51 @@
+extends ./_layouts/bm.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+
+    section.section.background-tecnologia
+        .container
+            h2.text-uppercase.text-main.text-center CURSOS
+            .row    
+                .cursos-flex
+                    .col-sm-03.borda-outros-cursos
+                        img.img-responsive(src="img/logo-striort.png", alt="Striort")
+                        p.text-main O fim das Estrias
+
+                    .col-sm-03.borda-outros-cursos
+                        img.img-responsive(src="img/ortoshock.png", alt="Ortoshock")
+                        p.text-main Master em Ondas de Choque
+               
+                    .col-sm-03.borda-outros-cursos
+                        img.img-responsive(src="img/ortobariatric.png", alt="Ortobariatric")
+                        p.text-main Estética e Emagrecimento Pós-Bariátrico              
+                    
+                    .col-sm-03.borda-outros-cursos
+                        img.img-responsive(src="img/PEO.png", alt="Logo Ortomolecular")
+                        p.text-main  A ¹Medicina Ortomolecular Adaptada à Estética
+
+                    .col-sm-03.borda-outros-cursos
+                        img.img-responsive(src="img/lg.png", alt="Logo LipoEscultura Gessada")
+                        p.text-main  A ¹Medicina Ortomolecular Adaptada à Estética
+
+
+    // objetos não visiveis na tela
+    img(src="img/linha-dourada.png", alt="linha dourada", class="hidden", id="dourado")
+    img(src="img/brilho.png", alt="linha dourada", class="hidden", id="shiny")
+
+
+
+
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+
