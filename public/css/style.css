@@ -992,9 +992,6 @@ header .rede-sociais > a {
 .language-w {
   text-align: center;
 }
-.langLI {
-  padding-top: 9px;
-}
 .borda-topo {
   border-bottom: 1px solid #c9c7c7;
 }
@@ -1509,6 +1506,9 @@ footer .logo-footer {
     letter-spacing: -0.2px;
     padding-top: 12px;
     font-size: 1.3rem;
+  }
+  .display-menu .langLI {
+    padding-top: 9px;
   }
 }
 @-webkit-keyframes rotacao {
