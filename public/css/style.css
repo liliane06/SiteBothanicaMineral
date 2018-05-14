@@ -298,6 +298,9 @@ footer {
 .text-light-gray {
   color: #f9f9f9;
 }
+[alt=""] {
+  border: 4px solid #f00;
+}
 body {
   font: 100%;
   font-family: 'Titillium Web', sans-serif;
@@ -1445,6 +1448,7 @@ footer .logo-footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 10px;
 }
 .display-menu li {
   list-style: none;
@@ -1583,6 +1587,59 @@ footer .logo-footer {
   bottom: 0;
   width: 100%;
   height: 80px;
+}
+.color {
+  color: #741815;
+}
+.link-do-blog {
+  color: #29713d;
+}
+.link-do-blog:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: #29713d;
+}
+.link-barra-lateral li {
+  list-style: none;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+.link-barra-lateral li a {
+  color: #737373;
+  text-decoration: none;
+}
+.link-barra-lateral li a:hover {
+  color: #29713d;
+  font-weight: bold;
+}
+.titulo-barra-lateral {
+  text-align: left;
+}
+label[for="email"] {
+  position: relative;
+}
+label[for="email"]:before {
+  content: "Ok";
+  background-color: #355731;
+  background-size: 50% 50%;
+  width: 2em;
+  height: 2em;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+}
+.input-email {
+  background-color: #e2e7e2;
+  height: 28px;
+  width: 90%;
+}
+.campo-de-busca {
+  box-shadow: 0 0 0 9999999px rgba(0,0,0,0.7);
+  z-index: 999999999999;
 }
 @media screen and (max-width: 900px) {
   .banner-blog1 {
