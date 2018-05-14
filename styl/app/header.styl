@@ -2,15 +2,22 @@ header
 	height: auto
 	background-image: url(../img/back-topo.jpg)
 	background-repeat: repeat-x
-	padding-top 7px
 	.container
 		padding-bottom: 8px
 		padding-top: 8px
+		&.bm-nav
+			padding 12px 0
 	.rede-sociais
 		text-align: right
 		& > a
 			padding-left:5px
 
+.language-w
+	text-align center
+
+.langLI
+	padding-top 9px
+	
 
 .borda-topo
 	border-bottom: 1px solid #c9c7c7
@@ -31,7 +38,6 @@ footer
 @media screen and (max-width: $queries['medium'])
 	header
 		height: auto
-		padding-top 10px
 		.container
 			padding-bottom: 5px
 		.rede-sociais
@@ -44,6 +50,9 @@ footer
 		text-align: center
 
 @media screen and (max-width: $queries['small'])
+	.language-w
+		text-align center
+		margin-top 10px
 
 	.rede-sociais-insta
 	.rede-sociais-face
@@ -52,4 +61,15 @@ footer
 		display block
 	.rede-sociais-face
 		margin-top: -10px
+
+@media screen and (max-width: 420px)
+	.language-w
+		text-align center
+		margin-top 10px
+
+
+@media screen and (max-width: 411px)
+	.language-w
+		text-align center
+		margin-top 0
 	

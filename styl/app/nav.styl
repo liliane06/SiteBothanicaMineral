@@ -5,6 +5,8 @@
     cursor pointer
     img 
         max-width 40px
+
+
 .menu-mob-flutuante
     display flex
     width: 100%
@@ -45,8 +47,9 @@
     li
         list-style: none
         text-transform: uppercase
-        margin-left: 35px
-        padding-top: 8px;
+        margin-left: 30px
+        padding-top: 12px;
+        font-size remify(13px)
         a
             text-decoration: none
             color: $colors['cinza']
@@ -59,6 +62,7 @@
                font-weight: bold
 .menu-mob
     cursor pointer
+    margin-top: 12px
     span.icon-bar
         margin-top 4px
         width: 30px
@@ -66,6 +70,19 @@
         display: block
         border-radius 3px
         background-color: $colors['verde']
+
+
+@media screen and (max-width :1200px)
+    .display-menu
+        display: flex
+        justify-content: flex-end
+        li
+            list-style: none
+            text-transform: uppercase
+            margin-left: 20px
+            letter-spacing -0.2px
+            padding-top: 12px;
+            font-size remify(13px)
             
 
 
