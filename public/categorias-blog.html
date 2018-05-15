@@ -27,50 +27,41 @@
   </head>
   <body>
     <div id="loader"><img class="loader-img img-responsive" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/Icon/Icon+72.png" alt="Lodder"></div>
-    <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo" id="ir-topos" href="#c-banner"><img class="seta" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/site/seta.png" alt="Voltar ao topo"></a></div>
+    <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo" id="ir-topos" href="#c-banner"><img class="seta" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/site/seta.png" alt="Voltar para o topo"></a></div>
+    <div id="busca">
+      <input type="text" id="busca" placeholder="O que procura?">
+    </div>
     <!-- menu-nobile-->
     <div class="menu-mob-flutuante" id="menu-mob-flutuante" style="display:none;">
       <ul class="display-menu-mob">
-        <li> <a class="link-topo goesTo" href="tecnologia.html">TECNOLOGIA</a></li>
-        <li> <a class="link-topo goesTo" href="produtos.html">PRODUTOS</a></li>
-        <li> <a class="link-topo goesTo" href="cursos.html">CURSOS</a></li>
+        <li> <a class="link-topo goesTo" href="#leort">BOTHANICA MINERAL®</a></li>
+        <li> <a class="link-topo goesTo" href="categorias-blog.html">CATEGORIAS</a></li>
+        <li> <a class="link-topo goesTo" href="#depoimentos">CURSOS</a></li>
         <li> <a class="link-topo goesTo" href="#leort">FALE CONOSCO</a></li>
-        <li> <a class="link-topo goesTo" href="index-blog.html">BLOG</a></li>
-        <li> <a class="link-topo goesTo" href="#depoimentos">SOBRE</a></li>
-        <li> <a class="link-topo goesTo" href="#depoimentos">bm.com.vc</a></li>
       </ul>
       <div class="fechar-menu"><img src="img/fechar.png" alt="Botão Fechar"></div>
     </div>
     <!-- Header navegação-->
-    <header id="topo">           
+    <header id="topo">
       <div class="borda-topo bg-main">
         <div class="container">
           <div class="row">
-            <div class="rede-sociais-blog col-xs-12"><a href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank"><img src="img/blog/icon-insta.png" alt="Facebook"></a><a href="#" target="_blank"><img src="img/blog/icon-youtube.png" alt="Facebook"></a><a href="https://www.facebook.com/Bothanicamineral/" target="_blank"><img src="img/blog/icon-face.png" alt="Facebook"></a></div>
+            <div class="rede-sociais-blog col-xs-12"><a href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank"><img src="img/blog/icon-insta.png" alt="Instagram"></a><a href="#" target="_blank"><img src="img/blog/icon-youtube.png" alt="Facebook"></a><a href="https://www.facebook.com/Bothanicamineral/" target="_blank"><img src="img/blog/icon-face.png" alt="Facebook"></a></div>
           </div>
         </div>
       </div>
-      <div class="container bm-nav">
-        <div class="bm-nav-main">
-          <div class="logo-leort col-xs-6 col-xs-push-3 col-md-2 col-md-push-0"><a href="index.html"><img src="img/logo-topo.png" alt="Logo Bothanica Mineral"></a></div>
+      <div class="container">
+        <div class="row">
+          <div class="logo-leort col-xs-6 col-xs-push-3 col-md-2 col-md-push-0"><a href="https://www.bothanicamineral.com.br/" target="_blank"><img src="img/logo-topo.png" alt="Logo Bothanica Mineral"></a></div>
           <div class="menu-leort col-xs-3 col-xs-pull-6 col-md-10 col-md-pull-0">
             <!-- Navegação para desk-->
             <nav class="visible-md visible-lg">
               <ul class="display-menu">
-                <li> <a class="link-topo" href="tecnologia.html">TECNOLOGIA</a></li>
-                <li> <a class="link-topo goesTo" href="produtos.html">PRODUTOS</a></li>
-                <li> <a class="link-topo goesTo" href="cursos.html">CURSOS</a></li>
+                <li> <a class="link-topo" href="#">BOTHANICA MINERAL®</a></li>
+                <li> <a class="link-topo goesTo" href="categorias-blog.html">CATEGORIAS</a></li>
+                <li> <a class="link-topo goesTo" href="categorias.html">CURSOS</a></li>
                 <li> <a class="link-topo goesTo" href="#">FALE CONOSCO</a></li>
-                <li> <a class="link-topo" href="index-blog.html">BLOG</a></li>
-                <li> <a class="link-topo goesTo" href="#">SOBRE</a></li>
-                <li> <a class="link-topo goesTo" href="#">bm.com.vc</a></li>
-                <li class="langLI"><img class="img-lang" src="img/br.png" alt="Escolha a lingua">
-                  <select id="lang" name="language">
-                    <option value="PT">PT</option>
-                    <option value="EN">EN</option>
-                    <option value="ES">ES</option>
-                  </select>
-                </li>
+                <li class="campo-de-busca">  <img src="img/lupa.png" alt="Buscar"></li>
               </ul>
             </nav>
             <!-- Navegação para mob-->
@@ -78,38 +69,92 @@
               <div class="menu-mob"><span class="icon-bar"></span><span class="icon-bar"> </span><span class="icon-bar">                  </span></div>
             </nav>
           </div>
-          <div class="language-w col-xs-3 visible-xs visible-sm"><img class="img-lang" src="img/br.png" alt="Escolha a lingua">
-            <select id="lang" name="language">
-              <option value="PT">PT</option>
-              <option value="EN">EN</option>
-              <option value="ES">ES                       </option>
-            </select>
-          </div>
         </div>
       </div>
       <div class="line-verde" id="menu-topo">
         <canvas class="absolute" id="brilho"></canvas>
       </div>
     </header>
-    <section class="section background-tecnologia">
-      <div class="container">
-        <h2 class="text-uppercase text-main text-center">CURSOS</h2>
-        <div class="row">   
-          <div class="cursos-flex">
-            <div class="col-sm-03 borda-outros-cursos"><img class="img-responsive" src="img/logo-striort.png" alt="Striort">
-              <p class="text-main">O fim das Estrias</p>
+    <!--section#banners
+    .col-sm-6(style="padding-left:0;padding-right:0;")
+        .banner-blog1
+            .gradiente-texto-banner
+                img.img-responsive.possition-flor-banner(src="img/blog/flor-bm.png", alt="Logo Bothanica Minneral")
+                p.possition-texto-banner PROCEDIMENTOS DIÁRIOS QUE SUA PELE PRECISA
+    .col-sm-6(style="padding-left:0;padding-right:0;")
+        .col-sm-12.banner-small(style="padding-left:5px;padding-right:0;")
+            .banner-blog2
+                .gradiente-texto-banner
+                    img.img-responsive.possition-flor-banner(src="img/blog/flor-bm.png", alt="Logo Bothanica Minneral")
+                    p.possition-texto-banner CUIDADOS COM A BARRIGA DURANTE A GESTAÇÃO
+        .col-sm-12(style="padding-left:5px;padding-right:0;padding-top:5px")
+            .banner-blog3
+                .gradiente-texto-banner
+                    img.img-responsive.possition-flor-banner(src="img/blog/flor-bm.png", alt="Logo Bothanica Minneral")
+                    p.possition-texto-banner COMO TER PERNAS FIRMES E BONITAS
+    
+    
+    
+    -->
+    <section id="categorias">
+      <div class="container pd-80-bottom">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="post">
+              <h2 class="pd-60-bottom text-verde-bm titulo-categoria-post">últimos artigos - PELE</h2><img class="img-responsive" src="img/blog/mulher-post.jpg" alt="Imagem do Post">
+              <h3 class="text-verde-bm">COMO ESTAR DE “BEM” COM O SEU CORPO</h3>
+              <p>18 de abril de 2018 - Pele </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in faucibus turpis. Mauris vestibulum ex in luctus vestibulum. Praesent tincidunt pulvinar purus, id blandit neque pharetra euismod.</p>
+              <p><a class="link-do-blog" href="#">LEIA MAIS</a></p>
             </div>
-            <div class="col-sm-03 borda-outros-cursos"><img class="img-responsive" src="img/lg.png" alt="Logo LipoEscultura Gessada">
-              <p class="text-main"> Resultados que Impressionam</p>
+            <div class="post pd-60-top"><img class="img-responsive" src="img/blog/mulher-hidratando-pele.jpg" alt="Imagem do Post">
+              <h3 class="text-verde-bm">ENTENDA A IMPORTÂNCIA DE HIDRATAR DIARIAMENTE A PELE</h3>
+              <p>22 de abril de 2018 - Pele</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in faucibus turpis. Mauris vestibulum ex in luctus vestibulum. Praesent tincidunt pulvinar purus, id blandit neque pharetra euismod.</p>
+              <p><a class="link-do-blog" href="#">LEIA MAIS</a></p>
             </div>
-            <div class="col-sm-03 borda-outros-cursos"><img class="img-responsive" src="img/ortoshock.png" alt="Ortoshock">
-              <p class="text-main">Master em Ondas de Choque</p>
+            <div class="post pd-60-top"><img class="img-responsive" src="img/blog/mulher-perna-post.jpg" alt="Imagem do Post">
+              <h3 class="text-verde-bm">SAIBA TUDO SOBRE AS CELULITES</h3>
+              <p>30 de abril de 2018 - Pele</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in faucibus turpis. Mauris vestibulum ex in luctus vestibulum. Praesent tincidunt pulvinar purus, id blandit neque pharetra euismod.</p>
+              <p><a class="link-do-blog" href="#">LEIA MAIS</a></p>
             </div>
-            <div class="col-sm-03 borda-outros-cursos"><img class="img-responsive" src="img/ortobariatric.png" alt="Ortobariatric">
-              <p class="text-main">Estética e Emagrecimento Pós-Bariátrico              </p>
+          </div>
+          <div class="col-md-2 pd-15-top">
+            <div class="barra-lateral">
+              <h3 class="text-verde-bm titulo-barra-lateral">CATEGORIAS</h3>
+              <ul class="link-barra-lateral" style="padding-left:0;">
+                <li> <a href="#">Pele</a></li>
+                <li> <a href="#">Profissional</a></li>
+                <li> <a href="#">Cosmocêuticos</a></li>
+                <li> <a href="#">Tendências</a></li>
+              </ul>
             </div>
-            <div class="col-sm-03 borda-outros-cursos"><img class="img-responsive" src="img/PEO.png" alt="Logo Ortomolecular">
-              <p class="text-main"> A ¹Medicina Ortomolecular Adaptada à Estética</p>
+            <div class="barra-lateral pd-20-top">
+              <h3 class="text-verde-bm titulo-barra-lateral">MAIS LIDOS</h3>
+              <ul class="link-barra-lateral" style="padding-left:0;">
+                <li> <a href="#">15 de abril de 2018 <br> Cuidados com a barriga durante a gestação</a></li>
+                <li> <a href="#">02 de abril de 2018 <br> Como ter pernas firmes e bonitas bon a gestação</a></li>
+              </ul>
+            </div>
+            <div class="barra-lateral pd-20-top">
+              <h3 class="text-verde-bm titulo-barra-lateral">NEWSLETTER</h3>
+              <label for="email">
+                <input class="input-email" id="email" name="e-mail" placeholder="Digite seu email" type="email">
+              </label>
+            </div>
+            <div class="barra-lateral pd-20-top">
+              <h3 class="color titulo-barra-lateral">CURSOS PARA PROFISSIONAIS DA ÁREA</h3>
+              <ul class="link-barra-lateral" style="padding-left:0;">
+                <li> <a href="#">STRIORT | O Fim das Estrias</a></li>
+                <li> <a href="#">LIPOESCULTURA GESSADA EXCLUSIVE</a></li>
+                <li> <a href="#">ORTOSHOCK | Master em Ondas de Choque</a></li>
+                <li> <a href="#">ORTOBARIATRIC | Estética e Emagrecimento em Pós - Bariátrico</a></li>
+                <li> <a href="#">PRÁTICA ESTÉTICA ORTOMOLECULAR</a></li>
+              </ul>
             </div>
           </div>
         </div>

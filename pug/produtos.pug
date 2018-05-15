@@ -1,0 +1,59 @@
+extends ./_layouts/bm.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+
+    section.section.background-tecnologia
+        .container
+            .row
+                .col-sm-10.col-sm-offset-1
+                    h2.text-center.text-main CONHEÇA NOSSA LINHA DE PRODUTOS
+                    .line-verde.line-small
+                    .row
+                        .flex.pd-40-top
+                            .cat
+                                a(href="cat-celulite.html")
+                                    img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
+                                    p.uppercase.text-center CELULITE
+                            .cat
+                                a(href="cat-destoxicacao.html")
+                                    img.img-responsive.center-block(src="img/destox.png", alt="Celulite")
+                                    p.uppercase.text-center Destoxicação
+                            .cat
+                                a(href="cat-estrias.html")
+                                    img.img-responsive.center-block(src="img/estrias.png", alt="Celulite")
+                                    p.uppercase.text-center estrias
+                            .cat
+                                a(href="cat-flacidex.html")
+                                    img.img-responsive.center-block(src="img/flacidez.png", alt="Celulite")
+                                    p.uppercase.text-center flacidex
+                            .cat
+                                a(href="cat-gordura-localizada.html")
+                                    img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
+                                    p.uppercase.text-center gordura localizada
+                        .col-sm-12
+                            p.pd-40-top Com uma exclusiva linha de produtos da mais alta qualidade, desenvolvidos sob rigorosos processos, a Bothanica Mineral garante 
+                                |resultados fantásticos e sucesso irrevogável ao profissional da área da beleza, 
+                                | que contará com ampla eficácia nos tratamentos e total satisfação de suas cliente
+
+
+    // objetos não visiveis na tela
+    img(src="img/linha-dourada.png", alt="linha dourada", class="hidden", id="dourado")
+    img(src="img/brilho.png", alt="linha dourada", class="hidden", id="shiny")
+
+
+
+
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+

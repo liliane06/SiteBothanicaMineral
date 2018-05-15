@@ -1,0 +1,102 @@
+extends ./_layouts/bm.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+
+    section.background-tecnologia.pd-60-top
+        .container.pd-60-bottom
+            .flex-cat
+                .cat-produtos
+                    img.img-responsive.center-block(src="img/destox.png", alt="Celulite")
+                    p.uppercase.text-center Destoxicação
+
+            .flex-cat
+                p.pd-40-top.texto-cat.text-center Com uma exclusiva linha de produtos da mais alta qualidade, desenvolvidos.
+            
+            .flex-cat
+                button.botao-categorias Linha Profissional
+                button.botao-categorias Linha Cliente
+        
+        .container.pd-80-top
+            .row
+                .col-sm-4.text-center
+                    img.img-responsive.img-produtos(src="img/produtos/produto1.png", alt="Produto Bothanica Mineral")
+                    h4.text-main S.O.S BIOCALMANT
+                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.
+
+                .col-sm-4.text-center
+                    img.img-responsive.img-produtos(src="img/produtos/produto2.png", alt="Produto Bothanica Mineral")
+                    h4.text-main S.O.S BIOCALMANT
+                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.   
+
+                .col-sm-4.text-center
+                    img.img-responsive.img-produtos(src="img/produtos/produto3.png", alt="Produto Bothanica Mineral")
+                    h4.text-main S.O.S BIOCALMANT
+                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.    
+
+        
+        .container.pd-80-top
+            .row
+                .col-sm-4.text-center
+                    img.img-responsive.img-produtos(src="img/produtos/produto1.png", alt="Produto Bothanica Mineral")
+                    h4.text-main S.O.S BIOCALMANT
+                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.
+
+                .col-sm-4.text-center
+                    img.img-responsive.img-produtos(src="img/produtos/produto2.png", alt="Produto Bothanica Mineral")
+                    h4.text-main S.O.S BIOCALMANT
+                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.   
+
+                .col-sm-4.text-center
+                    img.img-responsive.img-produtos(src="img/produtos/produto3.png", alt="Produto Bothanica Mineral")
+                    h4.text-main S.O.S BIOCALMANT
+                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.      
+    
+
+        .container.pd-80-top.pd-80-bottom
+            .row
+                .col-sm-10.col-sm-offset-1
+                    h3.text-center.text-main Mais categorias de produtos
+                    .row
+                        .flex.pd-20-top
+                            .cat
+                                a(href="cat-celulite.html")
+                                    img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
+                                    p.uppercase.text-center CELULITE
+                            .cat
+                                a(href="cat-destoxicacao.html")
+                                    img.img-responsive.center-block(src="img/destox.png", alt="Celulite")
+                                    p.uppercase.text-center Destoxicação
+                            .cat
+                                a(href="cat-estrias.html")
+                                    img.img-responsive.center-block(src="img/estrias.png", alt="Celulite")
+                                    p.uppercase.text-center estrias
+                            .cat
+                                a(href="cat-flacidex.html")
+                                    img.img-responsive.center-block(src="img/flacidez.png", alt="Celulite")
+                                    p.uppercase.text-center flacidex
+                            .cat
+                                a(href="cat-gordura-localizada.html")
+                                    img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
+                                    p.uppercase.text-center gordura localizada
+
+
+
+
+    // objetos não visiveis na tela
+    img(src="img/linha-dourada.png", alt="linha dourada", class="hidden", id="dourado")
+    img(src="img/brilho.png", alt="linha dourada", class="hidden", id="shiny")
+
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+
