@@ -140,8 +140,6 @@
 @media screen and (max-width: $queries['medium'])
     .cat
         width 50%
-
-
     .bandeira
         bottom: -20px;
         max-width: 450px;
@@ -185,6 +183,8 @@
         right 0
 
 @media screen and (max-width: $queries['small'])
+    .tec-texto
+        margin-top: 10px
     .seta-left
         left 0
     .seta-right
@@ -209,13 +209,19 @@
             img
                 margin: auto
 
+@media screen and (max-width: 1286px)
+    .seta-left
+        left -20px
+    .seta-right
+        right -20px
+
 @media screen and (max-width: 1024px)
     .language-w
         margin-top 10px
     .seta-left
-        left 0
+        left -10px
     .seta-right
-        right 0
+        right -10px
 @media screen and (max-width: 390px)
     .language-w
         margin-top 0
