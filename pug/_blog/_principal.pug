@@ -8,6 +8,11 @@ block append CSS
 
 block content
 
+    #busca
+        label.fechar-busca(for="buscar") X
+        input.campo-de-busca(type="text" name="bucar" placeholder="O que procura?" id="campo-busca")
+        img.botao-procurar(src="img/buscar-ok.png", alt="Procurar")
+
     section#banners
                 .col-sm-6(style="padding-left:0;padding-right:0;")
                     .banner-blog1
@@ -118,5 +123,6 @@ block content
 block append scriptsJS
     script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
     script(src="js/app.js")
+    script(src="js/blog.js")
 
 
