@@ -1637,12 +1637,12 @@ footer .logo-footer {
   color: #741815;
 }
 .link-do-blog {
-  color: ;
+  color: #005620;
 }
 .link-do-blog:hover {
   font-weight: bold;
   text-decoration: none;
-  color: ;
+  color: #005620;
 }
 .link-barra-lateral li {
   list-style: none;
@@ -1654,7 +1654,7 @@ footer .logo-footer {
   text-decoration: none;
 }
 .link-barra-lateral li a:hover {
-  color: ;
+  color: #005620;
   font-weight: bold;
 }
 .titulo-barra-lateral {
