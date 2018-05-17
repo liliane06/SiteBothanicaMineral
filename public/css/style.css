@@ -286,6 +286,7 @@ a {
 a:hover {
   text-decoration: none;
   color: #00ab40;
+  transition: 1s;
 }
 .argila {
   text-transform: uppercase;
@@ -1457,11 +1458,11 @@ footer .logo-footer {
   transition: 0.3s;
 }
 .display-menu-mob li a:hover {
-  color: ;
+  color: #005620;
   font-weight: bold;
 }
 .display-menu-mob li a.ativo {
-  color: ;
+  color: #005620;
   font-weight: bold;
 }
 .display-menu {
@@ -1486,11 +1487,11 @@ footer .logo-footer {
   transition: 0.3s;
 }
 .display-menu li a:hover {
-  color: ;
+  color: #005620;
   font-weight: bold;
 }
 .display-menu li a.ativo {
-  color: ;
+  color: #005620;
   font-weight: bold;
 }
 .menu-mob {
@@ -1589,6 +1590,18 @@ footer .logo-footer {
     height: 250px;
   }
 }
+.margin-banner1 {
+  padding: 0;
+}
+.margin-banner2 {
+  padding-left: 5px;
+  padding-right: 0;
+}
+.margin-banner3 {
+  padding-left: 5px;
+  padding-right: 0;
+  padding-top: 5px;
+}
 .rede-sociais-blog {
   text-align: center;
 }
@@ -1656,6 +1669,7 @@ footer .logo-footer {
 .link-barra-lateral li a:hover {
   color: #005620;
   font-weight: bold;
+  transition: 1s;
 }
 .titulo-barra-lateral {
   text-align: left;
@@ -1733,6 +1747,7 @@ label[for="email"]:before {
   top: 9.9%;
   left: 72.5%;
   width: 50px;
+  cursor: pointer;
 }
 .fechar-busca {
   z-index: 9999999;
@@ -1741,10 +1756,24 @@ label[for="email"]:before {
   top: 5%;
   left: 77%;
   font-size: 36px;
+  cursor: pointer;
+}
+.data {
+  color: #9fa1a1;
 }
 @media screen and (max-width: 900px) {
   .banner-blog1 {
     background-position: top, left;
+  }
+  .margin-banner2 {
+    padding-left: 0;
+    padding-top: 5px;
+  }
+  .margin-banner3 {
+    padding-left: 0;
+  }
+  .gradiente-texto-banner p {
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1763,6 +1792,14 @@ label[for="email"]:before {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: auto;
+}
+.bandeira-tec {
+  position: relative;
+}
+@media screen and (max-width: 900px) {
+  .bandeira-tec {
+    left: -100px;
+  }
 }
 .cursos-flex {
   display: -webkit-box;
@@ -1832,6 +1869,9 @@ label[for="email"]:before {
 }
 .img-produtos {
   margin: auto;
+}
+.produtos p {
+  padding: 25px;
 }
 @media screen and (max-width: 700px) {
   .cat-produtos {
