@@ -1317,6 +1317,13 @@ header .rede-sociais > a {
     max-width: 200px;
   }
 }
+.background-produtos-tec {
+  background-image: url("../img/fundo-tecnologia.jpg"), url("../img/background-tec.jpg");
+  background-position: top center, center bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-bottom: 220px;
+}
 .ir-topo {
   width: 50px;
   height: 50px;
@@ -1464,6 +1471,9 @@ footer .logo-footer {
 .display-menu-mob li a.ativo {
   color: #005620;
   font-weight: bold;
+}
+.display-menu-mob li.langLI {
+  padding-top: 9px;
 }
 .display-menu {
   display: -webkit-box;
@@ -1823,6 +1833,13 @@ label[for="email"]:before {
 }
 .cursos-flex > * p {
   margin: 0;
+}
+@media screen and (max-width: 576px) {
+  .cursos-flex > * {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
 }
 .cat-produtos {
   box-shadow: 0 0 3px #d3d3d3;
