@@ -28,7 +28,6 @@
     });
 
     function mostrarIrTopo(e){
-
         let btn = $('#ir-topo');
         let posY = e.currentTarget.scrollY
         if(posY > 800){
@@ -39,10 +38,10 @@
         }
     }
 
-    function menuLeort(e){
+    function mainMeunu(e){
         var header = $('#topo');
         let posY = e.currentTarget.scrollY
-        if(posY > 200){
+        if(posY > 30){
             $(header).addClass('pos-fixed');
         }
         else{
@@ -57,7 +56,7 @@
     }
 
     window.addEventListener('scroll', function(e){
-        menuLeort(e);
+        mainMeunu(e);
         mostrarIrTopo(e);
     });
 

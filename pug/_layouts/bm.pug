@@ -17,81 +17,8 @@ html(lang="pt")
         .ir-topo#ir-topo(style="display:none")
             a#ir-topos(href="#c-banner", class="goesTo")
                 img(class="seta",src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/seta.png", alt="Voltar ao topo")
-        // menu-nobile
-        .menu-mob-flutuante#menu-mob-flutuante(style="display:none;")
-            ul.display-menu-mob
-                li 
-                    a(class="link-topo",href="tecnologia.html", class="goesTo") TECNOLOGIA
-                li 
-                    a(class="link-topo",href="produtos.html", class="goesTo") PRODUTOS
-                li 
-                    a(class="link-topo",href="cursos.html", class="goesTo") CURSOS
-                li 
-                    a(class="link-topo",href="#leort", class="goesTo") FALE CONOSCO
-                li 
-                    a(class="link-topo",href="index-blog.html", class="goesTo") BLOG
-                li 
-                    a(class="link-topo",href="#depoimentos", class="goesTo") SOBRE
-                li 
-                    a(class="link-topo",href="#depoimentos", class="goesTo") bm.com.vc
-            .fechar-menu
-                img(src="img/fechar.png", alt="Botão Fechar")
-
-        // Header navegação
-        header#topo            
-            .borda-topo.bg-main
-                .container
-                    .row
-                        .rede-sociais-blog.col-xs-12
-                            a(href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank",  rel="noopener")
-                                img(src="img/blog/icon-insta.png", alt="Facebook")
-                            a(href="https://www.youtube.com/channel/UCXt09yqtrEngqUL8KANHuDA" target="_blank",  rel="noopener")
-                                img(src="img/blog/icon-youtube.png", alt="Facebook")
-                            a(href="https://www.facebook.com/Bothanicamineral/" target="_blank",  rel="noopener")
-                                img(src="img/blog/icon-face.png", alt="Facebook")
-            .container.bm-nav
-                .bm-nav-main
-                    .logo-leort.col-xs-6.col-xs-push-3.col-md-2.col-md-push-0
-                        a(href="index.html")
-                            img(src="img/logo-topo.png", alt="Logo Bothanica Mineral")
-                    .menu-leort.col-xs-3.col-xs-pull-6.col-md-10.col-md-pull-0
-                        // Navegação para desk
-                        nav.visible-md.visible-lg
-                            ul.display-menu
-                                li 
-                                    a(class="link-topo",href="tecnologia.html" ) TECNOLOGIA
-                                li 
-                                    a(class="link-topo",href="produtos.html", class="goesTo") PRODUTOS
-                                li 
-                                    a(class="link-topo",href="cursos.html", class="goesTo") CURSOS
-                                li 
-                                    a(class="link-topo",href="#", class="goesTo") FALE CONOSCO
-                                li 
-                                    a(class="link-topo",href="index-blog.html" ) BLOG
-                                li 
-                                    a(class="link-topo",href="#", class="goesTo") Resultados
-                                li 
-                                    a(class="link-topo", href="http://bm.com.vc", rel="noopener", target="_blank") bm.com.vc
-                                li.langLI
-                                    img.img-lang(src="img/br.png", alt="Escolha a lingua")  
-                                    select#lang(name="language")
-                                        option(value="PT") PT
-                                        option(value="EN") EN
-                                        option(value="ES") ES
-
-                        // Navegação para mob
-                        nav.visible-xs.visible-sm
-                                .menu-mob
-                                    span.icon-bar
-                                    span.icon-bar  
-                                    span.icon-bar                   
-
-                    .language-w.col-xs-3.visible-xs.visible-sm
-                        img.img-lang(src="img/br.png", alt="Escolha a lingua")  
-                        select#lang(name="language")
-                            option(value="PT") PT
-                            option(value="EN") EN
-                            option(value="ES") ES                       
+        // NAVEGAÇÃO
+        include ../_partials/nav.pug                     
 
             .line-verde#menu-topo
                 canvas#brilho.absolute

@@ -20,59 +20,7 @@ html(lang="pt")
        
          
        
-        // menu-nobile
-        .menu-mob-flutuante#menu-mob-flutuante(style="display:none;")
-            ul.display-menu-mob
-                li 
-                    a(class="link-topo",href="index.html", class="goesTo") BOTHANICA MINERAL®
-                li 
-                    a(class="link-topo",href="categorias-blog.html", class="goesTo") CATEGORIAS
-                li 
-                    a(class="link-topo",href="cursos.html", class="goesTo") CURSOS
-                li 
-                    a(class="link-topo",href="#leort", class="goesTo") FALE CONOSCO
-            .fechar-menu
-                img(src="img/fechar.png", alt="Botão Fechar")
-
-        // Header navegação
-        header#topo
-            .borda-topo.bg-main
-                .container
-                    .row
-                        .rede-sociais-blog.col-xs-12
-                            a(href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank")
-                                img(src="img/blog/icon-insta.png", alt="Instagram")
-                            a(href="#" target="_blank")
-                                img(src="img/blog/icon-youtube.png", alt="Facebook")
-                            a(href="https://www.facebook.com/Bothanicamineral/" target="_blank")
-                                img(src="img/blog/icon-face.png", alt="Facebook")
-
-            
-            .container
-                .row
-                    .logo-leort.col-xs-6.col-xs-push-3.col-md-2.col-md-push-0
-                        a(href="index.html")
-                            img(src="img/logo-topo.png", alt="Logo Bothanica Mineral")
-                    .menu-leort.col-xs-3.col-xs-pull-6.col-md-10.col-md-pull-0
-                        // Navegação para desk
-                        nav.visible-md.visible-lg
-                            ul.display-menu
-                                li 
-                                    a(class="link-topo",href="index.html" ) BOTHANICA MINERAL®
-                                li 
-                                    a(class="link-topo",href="categorias-blog.html", class="goesTo") CATEGORIAS
-                                li 
-                                    a(class="link-topo",href="cursos.html", class="goesTo") CURSOS
-                                li 
-                                    a(class="link-topo",href="#", class="goesTo") FALE CONOSCO
-                                li
-                                    img.lupa(src="img/lupa.png", alt="Buscar")
-                        // Navegação para mob
-                        nav.visible-xs.visible-sm
-                                .menu-mob
-                                    span.icon-bar
-                                    span.icon-bar  
-                                    span.icon-bar                   
+        include ../_partials/nav-blog.pug              
 
 
 
