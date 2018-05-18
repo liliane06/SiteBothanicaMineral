@@ -8,19 +8,23 @@ block append CSS
 
 block content
 
-    section.background-tecnologia.pd-60-top
-        .container.pd-60-bottom
-            .flex-cat
-                .cat-produtos
-                    img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
-                    p.uppercase.text-center gordura localizada
+    section.background-tecnologia.pd-60-top.relative
+        .container.pd-40-bottom
+            .cat-produtos.mainCat
+                img.active.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
+                p.uppercase.text-center gordura localizada
 
-            .flex-cat
-                p.pd-40-top.texto-cat.text-center Com uma exclusiva linha de produtos da mais alta qualidade, desenvolvidos.
-            
-            .flex-cat
-                button.botao-categorias Linha Profissional
-                button.botao-categorias Linha Cliente
+            .pos-filter            
+                .flex-center.pd-40-top               
+                    .material-switch.pull-right
+                        p.font-small Linha profissional
+                        input#chk0008(name="profissoes" type="checkbox" value="01")
+                        label.label-sucess(for="chk0008")
+                    .material-switch.pull-right
+                        p.font-small Linha cliente
+                        input#chk0007(name="amador" type="checkbox" value="02")
+                        label.label-sucess(for="chk0007")                 
+                        
         
         .container.pd-80-top
             .row
@@ -80,10 +84,7 @@ block content
                                 a(href="cat-flacidex.html")
                                     img.img-responsive.center-block(src="img/flacidez.png", alt="Celulite")
                                     p.uppercase.text-center flacidex
-                            .cat
-                                a(href="cat-gordura-localizada.html")
-                                    img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
-                                    p.uppercase.text-center gordura localizada
+
 
 
 

@@ -42,7 +42,7 @@
     function menuLeort(e){
         var header = $('#topo');
         let posY = e.currentTarget.scrollY
-        if(posY > 400){
+        if(posY > 200){
             $(header).addClass('pos-fixed');
         }
         else{

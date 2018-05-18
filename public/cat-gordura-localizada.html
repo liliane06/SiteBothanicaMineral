@@ -46,7 +46,7 @@
       <div class="borda-topo bg-main">
         <div class="container">
           <div class="row">
-            <div class="rede-sociais-blog col-xs-12"><a href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank"><img src="img/blog/icon-insta.png" alt="Facebook"></a><a href="#" target="_blank"><img src="img/blog/icon-youtube.png" alt="Facebook"></a><a href="https://www.facebook.com/Bothanicamineral/" target="_blank"><img src="img/blog/icon-face.png" alt="Facebook"></a></div>
+            <div class="rede-sociais-blog col-xs-12"><a href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank" rel="noopener"><img src="img/blog/icon-insta.png" alt="Facebook"></a><a href="https://www.youtube.com/channel/UCXt09yqtrEngqUL8KANHuDA" target="_blank" rel="noopener"><img src="img/blog/icon-youtube.png" alt="Facebook"></a><a href="https://www.facebook.com/Bothanicamineral/" target="_blank" rel="noopener"><img src="img/blog/icon-face.png" alt="Facebook"></a></div>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
                 <li> <a class="link-topo goesTo" href="#">FALE CONOSCO</a></li>
                 <li> <a class="link-topo" href="index-blog.html">BLOG</a></li>
                 <li> <a class="link-topo goesTo" href="#">Resultados</a></li>
-                <li> <a class="link-topo goesTo" href="#">bm.com.vc</a></li>
+                <li> <a class="link-topo" href="http://bm.com.vc" rel="noopener" target="_blank">bm.com.vc</a></li>
                 <li class="langLI"><img class="img-lang" src="img/br.png" alt="Escolha a lingua">
                   <select id="lang" name="language">
                     <option value="PT">PT</option>
@@ -91,19 +91,24 @@
         <canvas class="absolute" id="brilho"></canvas>
       </div>
     </header>
-    <section class="background-tecnologia pd-60-top">
-      <div class="container pd-60-bottom">
-        <div class="flex-cat">
-          <div class="cat-produtos"><img class="img-responsive center-block" src="img/celulite.png" alt="Celulite">
-            <p class="uppercase text-center">gordura localizada</p>
+    <section class="background-tecnologia pd-60-top relative">
+      <div class="container pd-40-bottom">
+        <div class="cat-produtos mainCat"><img class="active img-responsive center-block" src="img/celulite.png" alt="Celulite">
+          <p class="uppercase text-center">gordura localizada</p>
+        </div>
+        <div class="pos-filter">           
+          <div class="flex-center pd-40-top">              
+            <div class="material-switch pull-right">
+              <p class="font-small">Linha profissional</p>
+              <input id="chk0008" name="profissoes" type="checkbox" value="01">
+              <label class="label-sucess" for="chk0008"></label>
+            </div>
+            <div class="material-switch pull-right">
+              <p class="font-small">Linha cliente</p>
+              <input id="chk0007" name="amador" type="checkbox" value="02">
+              <label class="label-sucess" for="chk0007">                </label>
+            </div>
           </div>
-        </div>
-        <div class="flex-cat">
-          <p class="pd-40-top texto-cat text-center">Com uma exclusiva linha de produtos da mais alta qualidade, desenvolvidos.</p>
-        </div>
-        <div class="flex-cat">
-          <button class="botao-categorias">Linha Profissional</button>
-          <button class="botao-categorias">Linha Cliente</button>
         </div>
       </div>
       <div class="container pd-80-top">
@@ -152,8 +157,6 @@
                     <p class="uppercase text-center">estrias</p></a></div>
                 <div class="cat"><a href="cat-flacidex.html"><img class="img-responsive center-block" src="img/flacidez.png" alt="Celulite">
                     <p class="uppercase text-center">flacidex</p></a></div>
-                <div class="cat"><a href="cat-gordura-localizada.html"><img class="img-responsive center-block" src="img/celulite.png" alt="Celulite">
-                    <p class="uppercase text-center">gordura localizada</p></a></div>
               </div>
             </div>
           </div>
