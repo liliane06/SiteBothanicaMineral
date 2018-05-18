@@ -8,55 +8,51 @@ block append CSS
 
 block content
 
-    section.background-tecnologia.pd-60-top
-        .container.pd-60-bottom
-            .flex-cat
-                .cat-produtos
-                    img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
-                    p.uppercase.text-center CELULITE
+    section.background-tecnologia.pd-60-top.relative
+        .container.pd-40-bottom
+            .cat-produtos.mainCat
+                img.active.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
+                p.uppercase.text-center Celulite
 
-            .flex-cat
-                p.pd-40-top.texto-cat.text-center Com uma exclusiva linha de produtos da mais alta qualidade, desenvolvidos.
-            
-            .flex-cat
-                button.botao-categorias Linha Profissional
-                button.botao-categorias Linha Cliente
+            .pos-filter            
+                .flex-center.pd-40-top               
+                    .material-switch.pull-right
+                        p.font-small Linha profissional
+                        input#chk0008(name="profissoes" type="checkbox" value="01")
+                        label.label-sucess(for="chk0008")
+                    .material-switch.pull-right
+                        p.font-small Linha cliente
+                        input#chk0007(name="amador" type="checkbox" value="02")
+                        label.label-sucess(for="chk0007")                 
+                        
         
         .container.pd-80-top
             .row
-                .col-sm-4.text-center.produtos
+                .col-sm-4.text-center
                     img.img-responsive.img-produtos(src="img/produtos/produto1.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.
+                    h4.text-main CENZI | 120ml
+                    p Celulite, Estrias, Flacidez, Gordura Localizada
 
-                .col-sm-4.text-center.produtos
+
+
+                .col-sm-4.text-center
+                    img.img-responsive.img-produtos(src="img/produtos/hidratante-corpo-e-alma.png", alt="Produto Bothanica Mineral")
+                    h4.text-main HIDRATANTE CORPO & ALMA 250ml
+                    p LOÇÃO CREMOSA | Pele macia e renovada 
+
+                .col-sm-4.text-center
                     img.img-responsive.img-produtos(src="img/produtos/produto2.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.   
-
-                .col-sm-4.text-center.produtos
-                    img.img-responsive.img-produtos(src="img/produtos/produto3.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.    
+                    h4.text-main S.O.S BIOCALMANT 200ml
+                    p Loção corporal refrescante    
 
         
         .container.pd-80-top
             .row
-                .col-sm-4.text-center.produtos
-                    img.img-responsive.img-produtos(src="img/produtos/produto1.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.
-
-                .col-sm-4.text-center.produtos
-                    img.img-responsive.img-produtos(src="img/produtos/produto2.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.   
-
-                .col-sm-4.text-center.produtos
+                .col-sm-4.text-center
                     img.img-responsive.img-produtos(src="img/produtos/produto3.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.      
-    
+                    h4.text-main CREME DINAMIZADOR PARA CELULITE E GORDURA LOCALIZADA | 250g
+                    p Celulite, Gordura Localizada
+
 
         .container.pd-80-top.pd-80-bottom
             .row
@@ -64,10 +60,6 @@ block content
                     h3.text-center.text-main Mais categorias de produtos
                     .row
                         .flex.pd-20-top
-                            .cat
-                                a(href="cat-celulite.html")
-                                    img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
-                                    p.uppercase.text-center CELULITE
                             .cat
                                 a(href="cat-destoxicacao.html")
                                     img.img-responsive.center-block(src="img/destox.png", alt="Celulite")
@@ -83,7 +75,7 @@ block content
                             .cat
                                 a(href="cat-gordura-localizada.html")
                                     img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
-                                    p.uppercase.text-center gordura localizada
+                                    p.uppercase.text-center Gordura Localizada
 
 
 
