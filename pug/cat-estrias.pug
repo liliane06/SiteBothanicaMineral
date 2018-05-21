@@ -8,56 +8,72 @@ block append CSS
 
 block content
 
-    section.background-tecnologia.pd-60-top
-        .container.pd-60-bottom
-            .flex-cat
-                .cat-produtos
-                    img.img-responsive.center-block(src="img/estrias.png", alt="Celulite")
-                    p.uppercase.text-center estrias
+    section.background-tecnologia.pd-60-top.relative
+        .container.pd-40-bottom
+            .cat-produtos.mainCat
+                img.active.img-responsive.center-block(src="img/estrias.png", alt="Celulite")
+                p.uppercase.text-center Estrias
 
-            .flex-cat
-                p.pd-40-top.texto-cat.text-center Com uma exclusiva linha de produtos da mais alta qualidade, desenvolvidos.
-            
-            .flex-cat
-                button.botao-categorias Linha Profissional
-                button.botao-categorias Linha Cliente
+            .pos-filter            
+                .flex-center.pd-40-top               
+                    .material-switch.pull-right
+                        p.font-small Linha profissional
+                        input#chk0008(name="profissoes" type="checkbox" value="01")
+                        label.label-sucess(for="chk0008")
+                    .material-switch.pull-right
+                        p.font-small Linha cliente
+                        input#chk0007(name="amador" type="checkbox" value="02")
+                        label.label-sucess(for="chk0007")                 
+                        
         
         .container.pd-80-top
             .row
-                .col-sm-4.text-center
+                .col-sm-4.text-center.linha-cliente
                     img.img-responsive.img-produtos(src="img/produtos/produto1.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.
+                    h4.text-main CENZI | 120ml
+                    p Celulite, Estrias, Flacidez, Gordura Localizada
 
-                .col-sm-4.text-center
-                    img.img-responsive.img-produtos(src="img/produtos/produto2.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.   
+                .col-sm-4.text-center.linha-cliente
+                    img.img-responsive.img-produtos(src="img/produtos/sabonete_arg_branca.png", alt="Produto Bothanica Mineral")
+                    h4.text-main SABONETE ARGILA BRANCA BARRA 100% VEGETAL 80g
+                    p  Pele mista e oleosa
 
-                .col-sm-4.text-center
-                    img.img-responsive.img-produtos(src="img/produtos/produto3.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.    
+                .col-sm-4.text-center.linha-cliente
+                    img.img-responsive.img-produtos(src="img/produtos/sabonete-argila-preta.png", alt="Produto Bothanica Mineral")
+                    h4.text-main SABONETE ARGILA PRETA BARRA 100% VEGETAL  80g
+                    p Pele madura e desvitalizada
 
         
         .container.pd-80-top
             .row
-                .col-sm-4.text-center
-                    img.img-responsive.img-produtos(src="img/produtos/produto1.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.
-
-                .col-sm-4.text-center
-                    img.img-responsive.img-produtos(src="img/produtos/produto2.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.   
-
-                .col-sm-4.text-center
-                    img.img-responsive.img-produtos(src="img/produtos/produto3.png", alt="Produto Bothanica Mineral")
-                    h4.text-main S.O.S BIOCALMANT
-                    p Silvio Santos Ipsum ma! Ao adquirir o carnê do Baú, você estará concorrendo a um prêmio de cem mil reaisam.      
-    
-
+                .col-sm-4.text-center.linha-cliente
+                    img.img-responsive.img-produtos(src="img/produtos/sabonete-argila-preta-liq.png", alt="Produto Bothanica Mineral")
+                    h4.text-main SABONETE ARGILA PRETA LÍQUIDO 250ml
+                    p Pele madura e desvitalizada
+                .col-sm-4.text-center.linha-cliente
+                    img.img-responsive.img-produtos(src="img/produtos/sabonete-argila-branca-liq.png", alt="Produto Bothanica Mineral")
+                    h4.text-main SABONETE ARGILA BRANCA LÍQUIDO 250ml
+                    p Pele mista e oleosa
+                .col-sm-4.text-center.linha-cliente
+                    img.img-responsive.img-produtos(src="img/produtos/hidratante-corpo-e-alma.png", alt="Produto Bothanica Mineral")
+                    h4.text-main HIDRATANTE CORPO & ALMA 250ml
+                    p LOÇÃO CREMOSA | Pele macia e renovada 
+        
+        .container.pd-80-top
+            .row
+                .col-sm-4.text-center.linha-cliente
+                    img.img-responsive.img-produtos(src="img/produtos/S.O.S-BIOCALMANT.png", alt="Produto Bothanica Mineral")
+                    h4.text-main S.O.S BIOCALMANT 200ml
+                    p Loção corporal refrescante 
+                .col-sm-4.text-center.linha-cliente
+                    img.img-responsive.img-produtos(src="img/produtos/sabonete-argila-vermelha.png", alt="Produto Bothanica Mineral")
+                    h4.text-main SABONETE ARGILA VERMELHA BARRA 100% VEGETAL 80g
+                    p Pele sensível e seca
+                .col-sm-4.text-center.linha-cliente
+                    img.img-responsive.img-produtos(src="img/produtos/s.o.s-striort.png", alt="Produto Bothanica Mineral")
+                    h4.text-main STRIORT | S.O.S BIOCALMANT 50ml
+                    p Dessensibilizante Corporal
+       
         .container.pd-80-top.pd-80-bottom
             .row
                 .col-sm-10.col-sm-offset-1
@@ -67,23 +83,19 @@ block content
                             .cat
                                 a(href="cat-celulite.html")
                                     img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
-                                    p.uppercase.text-center CELULITE
+                                    p.uppercase.text-center Celulite
                             .cat
                                 a(href="cat-destoxicacao.html")
                                     img.img-responsive.center-block(src="img/destox.png", alt="Celulite")
                                     p.uppercase.text-center Destoxicação
                             .cat
-                                a(href="cat-estrias.html")
-                                    img.img-responsive.center-block(src="img/estrias.png", alt="Celulite")
-                                    p.uppercase.text-center estrias
-                            .cat
-                                a(href="cat-flacidex.html")
+                                a(href="cat-flacidez.html")
                                     img.img-responsive.center-block(src="img/flacidez.png", alt="Celulite")
-                                    p.uppercase.text-center flacidex
+                                    p.uppercase.text-center flacidez
                             .cat
                                 a(href="cat-gordura-localizada.html")
                                     img.img-responsive.center-block(src="img/celulite.png", alt="Celulite")
-                                    p.uppercase.text-center gordura localizada
+                                    p.uppercase.text-center Gordura Localizada
 
 
 
