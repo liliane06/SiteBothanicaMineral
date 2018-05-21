@@ -1660,6 +1660,25 @@ footer .logo-footer {
   background-repeat: no-repeat;
   width: 100%;
 }
+#custom-search-input button.btn-main {
+  padding: 0 10px;
+}
+#custom-search-input span {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+}
+#custom-search-input input {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #005620;
+  background-color: transparent;
+}
+#custom-search-input input:focus {
+  border-bottom: 1px solid #00ab40;
+  box-shadow: 0 2px 2px -2px #00ab40;
+}
 .banner-blog1 {
   background-image: url("../img/blog/background-parte1.jpg");
   height: 605px;

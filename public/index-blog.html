@@ -37,9 +37,12 @@
         <li> <a class="link-topo goesTo" href="produtos.html">PRODUTOS</a></li>
         <li> <a class="link-topo goesTo" href="cursos.html">CURSOS</a></li>
         <li> <a class="link-topo goesTo" href="#leort">FALE CONOSCO</a></li>
-        <li> <a class="link-topo goesTo" href="index-blog.html">BLOG</a></li>
-        <li> <a class="link-topo goesTo" href="#depoimentos">SOBRE</a></li>
-        <li> <a class="link-topo goesTo" href="#depoimentos">bm.com.vc</a></li>
+        <li>
+          <div class="relative" id="custom-search-input" style="max-width:220px;">
+            <div class="input-group col-md-12"><input type="text" class="form-control input-lg" placeholder="Buscar" /><span class="input-group-btn">
+                <button class="btn btn-main" type="button" style="background-color: transparent;"><i class="glyphicon glyphicon-search"></i></button></span></div>
+          </div>
+        </li>
       </ul>
       <div class="fechar-menu"><img src="img/fechar.png" alt="Botão Fechar"></div>
     </div>
@@ -75,19 +78,15 @@
             </nav>
             <!-- Navegação para mob-->
             <nav class="visible-xs visible-sm">
-              <div class="menu-mob"><span class="icon-bar"></span><span class="icon-bar"> </span><span class="icon-bar">                  </span></div>
+              <div class="menu-mob"><img src="img/blog/menu_menu-procurar.svg" alt="Menu Search" style="max-width: 30px;"></div>
             </nav>
           </div>
           <div class="language-w col-xs-3 visible-xs visible-sm"><img class="img-lang" src="img/br.png" alt="Escolha a lingua">
             <select id="lang" name="language">
               <option value="PT">PT</option>
               <option value="EN">EN</option>
-              <option value="ES">ES
-                <div class="line-verde" id="menu-topo">
-                  <canvas class="absolute" id="brilho"></canvas>
-                </div>
-              </option>
-            </select><img class="lupa" src="img/lupa.png" alt="Buscar">
+              <option value="ES">ES</option>
+            </select>
           </div>
         </div>
       </div>

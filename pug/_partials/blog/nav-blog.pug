@@ -8,12 +8,15 @@
             a(class="link-topo",href="cursos.html", class="goesTo") CURSOS
         li 
             a(class="link-topo",href="#leort", class="goesTo") FALE CONOSCO
-        li 
-            a(class="link-topo",href="index-blog.html", class="goesTo") BLOG
-        li 
-            a(class="link-topo",href="#depoimentos", class="goesTo") SOBRE
-        li 
-            a(class="link-topo",href="#depoimentos", class="goesTo") bm.com.vc
+        li
+            div#custom-search-input.relative(style="max-width:220px")
+                .input-group.col-md-12
+                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
+                    span.input-group-btn
+                        button.btn.btn-main(type="button", style="background-color: transparent")
+                            i.glyphicon.glyphicon-search
+
+
     .fechar-menu
         img(src="img/fechar.png", alt="Botão Fechar")
 
@@ -59,9 +62,7 @@ header#topo
                 // Navegação para mob
                 nav.visible-xs.visible-sm
                         .menu-mob
-                            span.icon-bar
-                            span.icon-bar  
-                            span.icon-bar                   
+                            img(src="img/blog/menu_menu-procurar.svg", alt="Menu Search", style="max-width: 30px")                   
 
             .language-w.col-xs-3.visible-xs.visible-sm
                 img.img-lang(src="img/br.png", alt="Escolha a lingua")  
@@ -69,4 +70,3 @@ header#topo
                     option(value="PT") PT
                     option(value="EN") EN
                     option(value="ES") ES
-                img.lupa(src="img/lupa.png", alt="Buscar")
