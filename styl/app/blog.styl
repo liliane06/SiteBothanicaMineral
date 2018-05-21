@@ -19,14 +19,18 @@
     background-repeat: no-repeat
     width: 100%
 
+.campo-busca-inativo
 #custom-search-input
     button.btn-main
         padding 0 10px
+        color: lighten($colors['main'], 20%)
+        text-shadow 1px 1px 1px lighten($colors['main'], 30%)
     span 
         position: absolute;
         bottom: 10px;
         right: 20px;
         z-index: 99;
+        color white
     input
         border none
         box-shadow none
@@ -34,13 +38,54 @@
         background-color transparent
         &:focus            
             border-bottom: 1px solid lighten($colors['main'], 20%)
-            box-shadow 0 2px 2px -2px lighten($colors['main'], 20%)
+            box-shadow: 0 2px 2px -2px lighten($colors['main'], 20%)
+
+#busca
+    display flex
+    position fixed
+    justify-content center 
+    width:100%
+    height 100%
+    background-color alpha(black, 0.9)
+    z-index 999
+    & > *
+        align-self center
+    .fechar-busca
+        margin 0
+        border 1px solid white
+        border-radius 50%
+        width 30px
+        height auto
+        margin-left 20px
+        color white
+        text-align center
+        padding 0
+        cursor pointer
+        animation escala 1s infinite
+    .input-group
+        position relative
+        width 70%;
+        min-width 200px
+
+    input
+        border: none;
+        border-bottom: 1px solid lighten($colors['main'], 20%)
+        box-shadow: 0 2px 2px -2px lighten($colors['main'], 20%)
+        &:focus
+            border-bottom: 1px solid lighten($colors['main'], 20%)
+            box-shadow: 0 2px 2px -2px lighten($colors['main'], 20%)
+
+
+
+
+
 
 .banner-blog1
     @extends .banneCover
     background-image: url(../img/blog/background-parte1.jpg)
     height 605px
-    position: relative
+    background-position: center center;
+    background-size: cover;
 
 .banner-blog2
     @extends .banneCover
@@ -171,14 +216,7 @@ label[for="email"]:before
     width: 50px
     cursor: pointer
 
-.fechar-busca
-    z-index 9999999
-    color: white
-    position: absolute
-    top: 5%
-    left 77%
-    font-size: 36px
-    cursor: pointer
+
 
 .data
     color: #9fa1a1

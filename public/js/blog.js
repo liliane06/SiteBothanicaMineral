@@ -1,16 +1,10 @@
 "use strict";
 (function($){
 
-    $(".lupa").on("click", function(){
-        $("#busca").fadeToggle(50);
-    });
-
-    $(".botao-procurar").on("click", function(){
-        $("#busca").fadeToggle(50);
-    });
-
-    $(".fechar-busca").on("click", function(){
-        $("#busca").fadeToggle(50);
-    });
+    function fadeOutBusca(){
+        $("#busca").fadeToggle(100);
+    }
+    $(".botao-procurar, .fechar-busca, .lupa").on("click", fadeOutBusca);
+    $( "#busca" ).dblclick(fadeOutBusca);
 
 })($)
