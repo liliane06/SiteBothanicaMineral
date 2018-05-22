@@ -1,0 +1,53 @@
+extends ./_layouts/bm.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+
+    section.background-tecnologia.pd-40-top
+        .container
+            h2.text-uppercase.text-main.text-center Conheça o DMAE!
+            .col-sm-6.pd-60-top.text-center
+                img.img-responsive.img.img-produto-grande(src="img/produtos/img-solo/dmae-profissional.png", alt="Sabonete de Argila") 
+            .col-sm-5.col-sm-offset-1.text-leort
+                h2.text-main.argila-title  Creme antirrugas
+                h4.text-main.argila-title  Promove maciez, nutrição e hidratação da pele!
+        img.img-responsive.bandeira-tec(src="img/tag-bm.png", alt="Bothanica Mineral")
+
+    section.pd-60-top
+        .container
+            h3.text-main.text-center  Usado no home care para flacidez facial e corporal
+            p Dmae 10%, tocoferol (vitamina E), vitamina A e ativos firmadores. Produto previne e combate linhas de expressão e rugas. Em massagens, 
+                |máscaras e como finalizador estimula a produção de fibras de colágeno e elastina melhorando a tonicidade. Promove nutrição, hidratação 
+                |e maciez da pele.
+            p Em apenas 4 semanas, usando regularmente dmae creme antirrugas, você notará a sua pele: mais hidratada, mais firme, mais elástica, mais 
+                |suave, mais macia e com menos linhas e rugas! Sua fórmula contém 10% de dmae que é um ativo que promove a tonicidade da pele por estimular 
+                |a formação de colágeno e elastina.
+            p Resultados clinicamente comprovados no instituto medicina, e foram: firmeza 100%, tonicidade 95%, maciez 95%, hidratação 95% e rugas e expressão 85%
+        .container.pd-80-top.pd-80-bottom
+            h3.text-main.text-center  Benefícios
+            p Em apenas quatro semanas de uso, é possível perceber maior hidratação, mais firmeza e elasticidade, uma diminuição de linhas e rugas de expressão e 
+                |da flacidez muscular, e também um aumento da suavidade e maciez da pele.
+           
+
+
+
+    // objetos não visiveis na tela
+    img(src="img/linha-dourada.png", alt="linha dourada", class="hidden", id="dourado")
+    img(src="img/brilho.png", alt="linha dourada", class="hidden", id="shiny")
+
+
+
+
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+

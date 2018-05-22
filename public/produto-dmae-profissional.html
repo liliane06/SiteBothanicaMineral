@@ -27,25 +27,17 @@
   </head>
   <body>
     <div id="loader"><img class="loader-img img-responsive" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/Icon/Icon+72.png" alt="Lodder"></div>
-    <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo" id="ir-topos" href="#c-banner"><img class="seta" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/site/seta.png" alt="Voltar para o topo"></a></div>
-    <div class="campo-busca-inativo" id="busca">           
-      <div class="input-group">
-                      <input type="text" class="form-control input-lg" placeholder="Buscar" /><span class="input-group-btn">
-          <button class="btn btn-main" type="button" style="background-color: transparent;"><i class="glyphicon glyphicon-search"></i></button></span></div>
-      <p class="fechar-busca" for="buscar">X </p>
-    </div>
+    <div class="ir-topo" id="ir-topo" style="display:none;"><a class="goesTo" id="ir-topos" href="#c-banner"><img class="seta" src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/seta.png" alt="Voltar ao topo"></a></div>
+    <!-- NAVEGAÇÃO-->
     <div class="menu-mob-flutuante" id="menu-mob-flutuante" style="display:none;">
       <ul class="display-menu-mob">
         <li> <a class="link-topo goesTo" href="tecnologia.html">TECNOLOGIA</a></li>
         <li> <a class="link-topo goesTo" href="produtos.html">PRODUTOS</a></li>
         <li> <a class="link-topo goesTo" href="cursos.html">CURSOS</a></li>
         <li> <a class="link-topo goesTo" href="#leort">FALE CONOSCO</a></li>
-        <li>
-          <div class="relative" id="custom-search-input" style="max-width:220px;">
-            <div class="input-group col-md-12"><input type="text" class="form-control input-lg" placeholder="Buscar" /><span class="input-group-btn">
-                <button class="btn btn-main" type="button" style="background-color: transparent;"><i class="glyphicon glyphicon-search"></i></button></span></div>
-          </div>
-        </li>
+        <li> <a class="link-topo goesTo" href="index-blog.html">BLOG</a></li>
+        <li> <a class="link-topo goesTo" href="#depoimentos">SOBRE</a></li>
+        <li> <a class="link-topo goesTo" href="#depoimentos">bm.com.vc</a></li>
       </ul>
       <div class="fechar-menu"><img src="img/fechar.png" alt="Botão Fechar"></div>
     </div>
@@ -65,8 +57,12 @@
             <!-- Navegação para desk-->
             <nav class="visible-md visible-lg">
               <ul class="display-menu">
-                <li> <a class="link-topo goesTo" href="#">Categorias</a></li>
-                <li> <a class="link-topo" href="index-blog.html">Bothanica Mineral</a></li>
+                <li> <a class="link-topo" href="tecnologia.html">TECNOLOGIA</a></li>
+                <li> <a class="link-topo goesTo" href="produtos.html">PRODUTOS</a></li>
+                <li> <a class="link-topo goesTo" href="cursos.html">CURSOS</a></li>
+                <li> <a class="link-topo goesTo" href="#">FALE CONOSCO</a></li>
+                <li> <a class="link-topo" href="index-blog.html">BLOG</a></li>
+                <li> <a class="link-topo goesTo" href="resultados.html">Resultados</a></li>
                 <li> <a class="link-topo" href="http://bm.com.vc" rel="noopener" target="_blank">bm.com.vc</a></li>
                 <li class="langLI"><img class="img-lang" src="img/br.png" alt="Escolha a lingua">
                   <select id="lang" name="language">
@@ -75,86 +71,54 @@
                     <option value="ES">ES</option>
                   </select>
                 </li>
-                <li><img class="lupa" src="img/lupa.png" alt="Buscar"></li>
               </ul>
             </nav>
             <!-- Navegação para mob-->
             <nav class="visible-xs visible-sm">
-              <div class="menu-mob"><img src="img/blog/menu_menu-procurar.svg" alt="Menu Search" style="max-width: 30px;"></div>
+              <div class="menu-mob"><span class="icon-bar"></span><span class="icon-bar"> </span><span class="icon-bar">                  </span></div>
             </nav>
           </div>
           <div class="language-w col-xs-3 visible-xs visible-sm"><img class="img-lang" src="img/br.png" alt="Escolha a lingua">
             <select id="lang" name="language">
               <option value="PT">PT</option>
               <option value="EN">EN</option>
-              <option value="ES">ES</option>
+              <option value="ES">ES  
+                <div class="line-verde" id="menu-topo">
+                  <canvas class="absolute" id="brilho"></canvas>
+                </div>
+              </option>
             </select>
           </div>
         </div>
       </div>
     </header>
-    <section id="categorias">
-      <div class="container pd-80-bottom pd-80-top">
-        <div class="row">
-          <div class="col-md-10">
-            <div class="post">
-              <h2 class="pd-60-bottom text-main titulo-categoria-post">últimos artigos - PELE</h2><img class="img-responsive" src="img/blog/mulher-post.jpg" alt="Imagem do Post">
-              <h3 class="text-main">COMO ESTAR DE “BEM” COM O SEU CORPO</h3>
-              <p class="data">18 de abril de 2018 - Pele </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in faucibus turpis. Mauris vestibulum ex in luctus vestibulum. Praesent tincidunt pulvinar purus, id blandit neque pharetra euismod.</p>
-              <p><a class="link-do-blog" href="#">LEIA MAIS</a></p>
-            </div>
-            <div class="post pd-60-top"><img class="img-responsive" src="img/blog/mulher-hidratando-pele.jpg" alt="Imagem do Post">
-              <h3 class="text-main">ENTENDA A IMPORTÂNCIA DE HIDRATAR DIARIAMENTE A PELE</h3>
-              <p class="data">22 de abril de 2018 - Pele</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in faucibus turpis. Mauris vestibulum ex in luctus vestibulum. Praesent tincidunt pulvinar purus, id blandit neque pharetra euismod.</p>
-              <p><a class="link-do-blog" href="#">LEIA MAIS</a></p>
-            </div>
-            <div class="post pd-60-top"><img class="img-responsive" src="img/blog/mulher-perna-post.jpg" alt="Imagem do Post">
-              <h3 class="text-main">SAIBA TUDO SOBRE AS CELULITES</h3>
-              <p class="data">30 de abril de 2018 - Pele</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in faucibus turpis. Mauris vestibulum ex in luctus vestibulum. Praesent tincidunt pulvinar purus, id blandit neque pharetra euismod.</p>
-              <p><a class="link-do-blog" href="#">LEIA MAIS</a></p>
-            </div>
-          </div>
-          <div class="col-md-2 pd-15-top">
-            <div class="barra-lateral">
-              <h3 class="text-main titulo-barra-lateral">CATEGORIAS</h3>
-              <ul class="link-barra-lateral" style="padding-left:0;">
-                <li> <a href="#">Pele</a></li>
-                <li> <a href="#">Profissional</a></li>
-                <li> <a href="#">Cosmocêuticos</a></li>
-                <li> <a href="#">Tendências</a></li>
-              </ul>
-            </div>
-            <div class="barra-lateral pd-20-top">
-              <h3 class="text-main titulo-barra-lateral">MAIS LIDOS</h3>
-              <ul class="link-barra-lateral" style="padding-left:0;">
-                <li> <a href="#">15 de abril de 2018 <br> Cuidados com a barriga durante a gestação</a></li>
-                <li> <a href="#">02 de abril de 2018 <br> Como ter pernas firmes e bonitas bon a gestação</a></li>
-              </ul>
-            </div>
-            <div class="barra-lateral pd-20-top">
-              <h3 class="text-main titulo-barra-lateral">NEWSLETTER</h3>
-              <label for="email">
-                <input class="input-email" id="email" name="e-mail" placeholder="Digite seu email" type="email">
-              </label>
-            </div>
-            <div class="barra-lateral pd-20-top">
-              <h3 class="color titulo-barra-lateral">CURSOS PARA PROFISSIONAIS DA ÁREA</h3>
-              <ul class="link-barra-lateral" style="padding-left:0;">
-                <li> <a href="#">STRIORT | O Fim das Estrias</a></li>
-                <li> <a href="#">LIPOESCULTURA GESSADA EXCLUSIVE</a></li>
-                <li> <a href="#">ORTOSHOCK | Master em Ondas de Choque</a></li>
-                <li> <a href="#">ORTOBARIATRIC | Estética e Emagrecimento em Pós - Bariátrico</a></li>
-                <li> <a href="#">PRÁTICA ESTÉTICA ORTOMOLECULAR</a></li>
-              </ul>
-            </div>
-          </div>
+    <section class="background-tecnologia pd-40-top">
+      <div class="container">
+        <h2 class="text-uppercase text-main text-center">Conheça o DMAE!</h2>
+        <div class="col-sm-6 pd-60-top text-center"><img class="img-responsive img img-produto-grande" src="img/produtos/img-solo/dmae-profissional.png" alt="Sabonete de Argila"></div>
+        <div class="col-sm-5 col-sm-offset-1 text-leort">
+          <h2 class="text-main argila-title"> Creme antirrugas</h2>
+          <h4 class="text-main argila-title"> Promove maciez, nutrição e hidratação da pele!</h4>
         </div>
+      </div><img class="img-responsive bandeira-tec" src="img/tag-bm.png" alt="Bothanica Mineral">
+    </section>
+    <section class="pd-60-top">
+      <div class="container">
+        <h3 class="text-main text-center"> Usado no home care para flacidez facial e corporal</h3>
+        <p>
+          Dmae 10%, tocoferol (vitamina E), vitamina A e ativos firmadores. Produto previne e combate linhas de expressão e rugas. Em massagens, máscaras e como finalizador estimula a produção de fibras de colágeno e elastina melhorando a tonicidade. Promove nutrição, hidratação 
+          e maciez da pele.
+        </p>
+        <p>
+          Em apenas 4 semanas, usando regularmente dmae creme antirrugas, você notará a sua pele: mais hidratada, mais firme, mais elástica, mais suave, mais macia e com menos linhas e rugas! Sua fórmula contém 10% de dmae que é um ativo que promove a tonicidade da pele por estimular 
+          a formação de colágeno e elastina.
+        </p>
+        <p>Resultados clinicamente comprovados no instituto medicina, e foram: firmeza 100%, tonicidade 95%, maciez 95%, hidratação 95% e rugas e expressão 85%</p>
+      </div>
+      <div class="container pd-80-top pd-80-bottom">
+        <h3 class="text-main text-center"> Benefícios</h3>
+        <p>
+          Em apenas quatro semanas de uso, é possível perceber maior hidratação, mais firmeza e elasticidade, uma diminuição de linhas e rugas de expressão e da flacidez muscular, e também um aumento da suavidade e maciez da pele.</p>
       </div>
     </section>
     <!-- objetos não visiveis na tela--><img class="hidden" src="img/linha-dourada.png" alt="linha dourada" id="dourado"><img class="hidden" src="img/brilho.png" alt="linha dourada" id="shiny">

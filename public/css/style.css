@@ -2057,6 +2057,9 @@ img.active {
 .produtos p {
   padding: 25px;
 }
+.img-produto-grande {
+  margin: auto;
+}
 @media screen and (max-width: 700px) {
   .cat-produtos {
     width: 50%;
@@ -2068,6 +2071,38 @@ img.active {
 @media screen and (max-width: 320px) {
   .texto-cat {
     width: 70%;
+  }
+}
+.fex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.fex .flex-item {
+  margin: 50px;
+}
+.botao-resutados {
+  background-color: #005620;
+  color: #fff;
+  width: 15%;
+  height: 40px;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  .botao-resutados {
+    width: 40%;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .botao-resutados {
+    width: 50%;
+    height: 60px;
   }
 }
 

@@ -1,0 +1,49 @@
+extends ./_layouts/bm.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+
+    section.background-tecnologia.pd-40-top
+        .container
+            h2.text-uppercase.text-main.text-center Conheça o creme corporal cenzi
+            .col-sm-6.pd-60-top.text-center
+                img.img-responsive.img.leort-banner1.img-produto-grande(src="img/produtos/img-solo/cenzi-profissional.png", alt="Sabonete de Argila") 
+            .col-sm-5.col-sm-offset-1.text-leort
+                h2.text-main.argila-title  Tratamento e prevenção de gordura localizada e celulite em todos os graus!
+        img.img-responsive.bandeira-tec(src="img/tag-bm.png", alt="Bothanica Mineral")
+
+    section.pd-60-top
+        .container
+            h3.text-main.text-center  Sobre
+            p Produto termogênico que produz hiperemia (aumento da circulação sanguínea no local onde o produto foi aplicado causando aquecimento, 
+                |vermelhidão e em alguns casos leve coceira).Em massagens aumenta a circulação sanguínea do local beneficiando as trocas capilares, 
+                |oxigenando, nutrindo e retirando resíduos metabólicos. Potencializa a penetração de ativos. Como finalizador intensifica benefícios 
+                |gerados na ciruculação sanguínea. Rendimento de aproximadamente 50 aplicações.
+        .container.pd-80-top.pd-80-bottom
+            h3.text-main.text-center  IDEAL PARA
+            p Melhora a microcirculação sanguínea, estimula o metabolismo corporal, descongestiona tecidos afetados pela celulite e gordura localizada, 
+                |além de auxiliar nas estrias e flacidez. Aumenta a permeabilidade de ativos pela pele.
+           
+
+
+
+    // objetos não visiveis na tela
+    img(src="img/linha-dourada.png", alt="linha dourada", class="hidden", id="dourado")
+    img(src="img/brilho.png", alt="linha dourada", class="hidden", id="shiny")
+
+
+
+
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+

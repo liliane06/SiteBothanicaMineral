@@ -1,0 +1,52 @@
+extends ./_layouts/bm.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+
+    section.background-tecnologia.pd-40-top
+        .container
+            h2.text-uppercase.text-main.text-center Conheça nosso Gel crioterapico!
+            .col-sm-6.pd-60-top.text-center
+                img.img-responsive.img.leort-banner1.img-produto-grande(src="img/produtos/img-solo/gel-crioterapico-profissional.png", alt="Produto Bothanica Mineral") 
+            .col-sm-5.col-sm-offset-1.text-leort
+                h3.text-main.argila-title  Promove o resfriamento no local aplicado e estimula a geração de calor e consequentemente a quebra da gordura!
+        img.img-responsive.bandeira-tec(src="img/tag-bm.png", alt="Bothanica Mineral")
+
+    section.pd-60-top
+        .container
+            h3.text-main.text-center  Produto Oficial da Crioterapia
+            p Formulado em base gel especial com ativos em alta concentração.  Auxiliar no combate da celulite, flacidez e gordura localizada, em procedimentos 
+                |estéticos de redução de medidas.
+        .container.pd-80-top.pd-80-bottom
+            h3.text-main.text-center  IDEAL PARA
+            p Auxiliar em procedimentos estéticos de celulite e gordura localizada. Promover o resfriamento local e estimular a geração de calor com consequente 
+                |quebra da gordura. Potencializa a formação de fibras no tecido conjuntivo reduzindo a flacidez tissular. 
+
+        .container.pd-80-top.pd-80-bottom
+            h3.text-main.text-center  Benefícios
+            p Estímulo da formação de fibras colágenas e elásticas, reduzindo a flacidez de pele, aumento do metabolismo através do processo da estimulação dos 
+                |receptores do frio, estimulando a liberação hormonal para ativar os processos de homeotermia. Vasoconstrição superficial com vasodilatação profunda, 
+                |gerando consequente elevação das taxas metabólicas.           
+
+
+
+    // objetos não visiveis na tela
+    img(src="img/linha-dourada.png", alt="linha dourada", class="hidden", id="dourado")
+    img(src="img/brilho.png", alt="linha dourada", class="hidden", id="shiny")
+
+
+
+
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+
