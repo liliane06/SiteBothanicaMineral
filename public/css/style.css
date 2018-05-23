@@ -975,7 +975,7 @@ header .rede-sociais > a {
 .pos-fixed {
   transition: 1s;
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
   width: 100%;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -2059,6 +2059,13 @@ img.active {
 }
 .img-produto-grande {
   margin: auto;
+}
+.produto-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 700px) {
   .cat-produtos {
