@@ -9,16 +9,35 @@ block append CSS
 block content
 
     section.pd-40-top
-        .container
-            h2.text-main.text-center  Atendimento ao Cliente
-            .row.pd-40-top.text-center
-                p Caso tenha alguma dúvida, sugestão ou reclamação, queremos muito saber o que deseja 
-                    |nos dizer, entre em contato por e-mail, telefone ou pelo nosso formulário de contato.
-                p.text-main SAC: +55 11 4508-8998 <br>
-                    |Atendimento: Segunda à sexta | 09h às 18h <br>
-                    |E-mail: sac@bothanicamineral.com.br <br>
-            .container.pd-40-top.pd-80-bottom.text-center
-                input.input-fale-conosco(type="text" placeholder="Nome")
+        .container.texto-fale-conosco
+            h2.text-main  Atendimento ao Cliente
+            p Caso tenha alguma dúvida, sugestão ou reclamação, queremos muito saber o que deseja 
+                |nos dizer, entre em contato por e-mail, telefone ou pelo nosso formulário de contato.
+            .row.pd-40-top.texto-fale-conosco
+                .col-sm-12.col-xs-12.col-md-6
+                    h3.text-main Telefone
+                    p.text-main SAC: +55 11 4508-8998 <br>
+                        |Atendimento: Segunda à sexta | 09h às 18h <br>
+                        |E-mail: sac@bothanicamineral.com.br <br>
+                    .embed-responsive.embed-responsive-16by9
+                        iframe.embed-responsive-item( src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.2195222284263!2d-46.6911243844481!3d-23.632308170102583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5092c5cf2117%3A0x5cb6fbeaf598bcde!2sAv.+Ver.+Jos%C3%A9+Diniz%2C+1370+-+Santo+Amaro%2C+S%C3%A3o+Paulo+-+SP%2C+04604-001!5e0!3m2!1spt-BR!2sbr!4v1527190168855" width="500" height="450" frameborder="0" style="border:0" allowfullscreen)
+                .col-sm-12.col-xs-12.col-md-6
+                    .pd-40-top
+                        input.input-fale-conosco-full(type="text" placeholder="Nome")
+                        input.input-fale-conosco-full(type="email" placeholder="E-mail")
+                        input.input-fale-conosco(type="text" placeholder="Telefone")
+                        input.input-fale-conosco.input-fale-conosco-direita(type="text" placeholder="Empresa")
+                        select.input-fale-conosco(type="text" name="tipo-de-cliente" id="tipo-de-cliente")
+                            option(value="credenciado") Profissional Credenciado
+                            option(value="nao-credenciado") Profissional não Credenciado
+                            option(value="cliente") Cliente
+                        input.input-fale-conosco.input-fale-conosco-direita(type="text" placeholder="Assunto")
+
+                        textarea.mensagem-fale-conosco(name="mensagem", cols="30", rows="10" placeholder="Mensagem")
+                    .text-center.pd-80-bottom.pd-40-top
+                        button.uppercase.botao-fale-conosco enviar 
+                        
+
            
 
 
