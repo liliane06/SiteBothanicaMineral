@@ -2112,5 +2112,10 @@ img.active {
     height: 60px;
   }
 }
+.input-fale-conosco {
+  width: 50%;
+  height: 40px;
+  border: 2px solid #005620;
+}
 
 /*# sourceMappingURL=maps/style.css.map */

@@ -1,0 +1,40 @@
+extends ./_layouts/bm.pug
+
+block append CSS
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    
+
+block content
+
+    section.pd-40-top
+        .container
+            h2.text-main.text-center  Atendimento ao Cliente
+            .row.pd-40-top.text-center
+                p Caso tenha alguma dúvida, sugestão ou reclamação, queremos muito saber o que deseja 
+                    |nos dizer, entre em contato por e-mail, telefone ou pelo nosso formulário de contato.
+                p.text-main SAC: +55 11 4508-8998 <br>
+                    |Atendimento: Segunda à sexta | 09h às 18h <br>
+                    |E-mail: sac@bothanicamineral.com.br <br>
+            .container.pd-40-top.pd-80-bottom.text-center
+                input.input-fale-conosco(type="text" placeholder="Nome")
+           
+
+
+
+    // objetos não visiveis na tela
+    img(src="img/linha-dourada.png", alt="linha dourada", class="hidden", id="dourado")
+    img(src="img/brilho.png", alt="linha dourada", class="hidden", id="shiny")
+
+
+
+
+
+
+
+block append scriptsJS
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
+    script(src="js/app.js")
+
+
