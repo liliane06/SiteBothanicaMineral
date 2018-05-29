@@ -305,7 +305,6 @@ textarea.form-control {
   border-radius: 0px;
   border: 1px solid transparent;
   color: ;
-  text-align: center;
   background-color: #f8f8f8;
 }
 input:focus,
@@ -2102,6 +2101,11 @@ img.active {
   height: 40px;
   font-size: 20px;
 }
+.titulo-resultados {
+  margin-top: 0;
+  font-size: 60px;
+  letter-spacing: 5px;
+}
 @media screen and (max-width: 800px) {
   .botao-resutados {
     width: 40%;
@@ -2114,36 +2118,8 @@ img.active {
     height: 60px;
   }
 }
-.input-fale-conosco-full {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 20px;
+.borda {
   border: 2px solid #005620;
-}
-.input-fale-conosco-full:focus {
-  border: 2px solid #00ab40;
-}
-.input-fale-conosco {
-  width: 49%;
-  height: 40px;
-  margin-bottom: 20px;
-  border: 2px solid #005620;
-  float: left;
-}
-.input-fale-conosco:focus {
-  border: 2px solid #00ab40;
-}
-.input-fale-conosco-direita {
-  margin-left: 10px;
-}
-.mensagem-fale-conosco {
-  width: 100%;
-  border: 2px solid #005620;
-  text-align: center;
-  padding-top: 20px;
-}
-.mensagem-fale-conosco:focus {
-  border: 2px solid #00ab40;
 }
 .botao-fale-conosco {
   margin: auto;
@@ -2152,6 +2128,7 @@ img.active {
   width: 25%;
   height: 40px;
   font-size: 16px;
+  margin-bottom: 80px;
 }
 .botao-fale-conosco:hover {
   background-color: #00ab40;
@@ -2164,31 +2141,14 @@ input.form-control:focus,
 select.form-control:focus,
 textarea.form-control:focus {
   border: 2px solid #84c140;
+  opacity: 0.8;
 }
-@media screen and (max-width: 1197px) {
-  .input-fale-conosco {
-    width: 48%;
-  }
-  .input-fale-conosco-direita {
-    margin-left: 16px;
-  }
+.inativar-titulo {
+  display: none;
 }
-@media screen and (max-width: 1000px) {
-  .input-fale-conosco-direita {
-    margin-left: 28px;
-  }
-}
-@media screen and (max-width: 900px) {
-  .texto-fale-conosco {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 500px) {
-  .input-fale-conosco {
-    width: 100%;
-  }
-  .input-fale-conosco-direita {
-    margin-left: 0;
+@media screen and (max-width: 990px) {
+  .inativar-titulo {
+    display: block;
   }
 }
 

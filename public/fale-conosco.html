@@ -110,20 +110,52 @@
           </div>
           <div class="col-sm-12 col-xs-12 col-md-6">
             <div class="pd-40-top">
-              <input class="input-fale-conosco-full" type="text" placeholder="Nome">
-              <input class="input-fale-conosco-full" type="email" placeholder="E-mail">
-              <input class="input-fale-conosco" type="text" placeholder="Telefone">
-              <input class="input-fale-conosco input-fale-conosco-direita" type="text" placeholder="Empresa">
-              <select class="input-fale-conosco" type="text" name="tipo-de-cliente" id="tipo-de-cliente">
-                <option value="credenciado">Profissional Credenciado</option>
-                <option value="nao-credenciado">Profissional não Credenciado</option>
-                <option value="cliente">Cliente</option>
-              </select>
-              <input class="input-fale-conosco input-fale-conosco-direita" type="text" placeholder="Assunto">
-              <textarea class="mensagem-fale-conosco" name="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
-            </div>
-            <div class="text-center pd-80-bottom pd-40-top">
-              <button class="uppercase botao-fale-conosco">enviar </button>
+              <h2 class="text-main text-center pd-60-top pd-60-bottom inativar-titulo">Enviar mensagem</h2>
+              <div class="form-group">
+                <div class="col-sm-12 formulario">
+                  <label class="label-fale-conosco" for="Nome">Nome</label>
+                  <input class="borda form-control input-lg" type="text" id="Nome" placeholder="Seu Nome" style="border: 2px solid #005620;">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12 formulario">
+                  <label for="e-mail">E-mail</label>
+                  <input class="borda form-control input-lg" type="email" id="e-mail" placeholder="exemplo@email.com" style="border: 2px solid #005620;">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-6 formulario">
+                  <label for="telefone">Telefone</label>
+                  <input class="borda form-control input-lg" type="text" id="telefone" placeholder="XX 00000-0000" style="border: 2px solid #005620;">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-6 formulario">
+                  <label for="Empresa">Empresa</label>
+                  <input class="borda form-control input-lg" type="text" id="Empresa" placeholder="Sua Empresa" style="border: 2px solid #005620;">
+                </div>
+              </div>
+              <div class="col-sm-6 formulario">
+                <label for="categoria">Categoria</label>
+                <select class="borda form-control input-lg" name="Categoria" id="categoria" style="border: 2px solid #005620;">
+                  <option value="Categoria">Profissional Credenciado</option>
+                  <option value="Categoria">Profissional não Credenciado</option>
+                  <option value="Categoria">Cliente</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-6 formulario">
+                  <label for="Assunto">Assunto</label>
+                  <input class="input-lg borda form-control" type="text" id="Assunto" placeholder="Sua Empresa" style="border: 2px solid #005620;">
+                </div>
+              </div>
+              <div class="col-sm-12 formulario">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="input-lg borda form-control" name="mensagem" cols="30" rows="10" id="mensagem" placeholder="Digite sua mensagem" style="border: 2px solid #005620;"></textarea>
+              </div>
+              <div class="text-center">
+                <button class="uppercase botao-fale-conosco">enviar </button>
+              </div>
             </div>
           </div>
         </div>

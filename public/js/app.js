@@ -82,4 +82,17 @@
         //bannerSize();
 
     })
+
+    window.onEappsInstagramFeedReady = function() {            
+        $('.my-instashow').eappsInstagramFeed({
+            api: '/instashow/api/index.php',
+            source: '@muradosmann',
+            width: 'auto',
+            layout: 'grid',
+            columns: 5,
+            rows: 3,
+            lang: 'en'
+        });
+    };
+    
 })($)
