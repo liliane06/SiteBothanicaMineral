@@ -23,19 +23,30 @@ block content
                         iframe.embed-responsive-item( src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.2195222284263!2d-46.6911243844481!3d-23.632308170102583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5092c5cf2117%3A0x5cb6fbeaf598bcde!2sAv.+Ver.+Jos%C3%A9+Diniz%2C+1370+-+Santo+Amaro%2C+S%C3%A3o+Paulo+-+SP%2C+04604-001!5e0!3m2!1spt-BR!2sbr!4v1527190168855" width="500" height="450" frameborder="0" style="border:0" allowfullscreen)
                 .col-sm-12.col-xs-12.col-md-6
                     .pd-40-top
-                        input.input-fale-conosco-full(type="text" placeholder="Nome")
-                        input.input-fale-conosco-full(type="email" placeholder="E-mail")
-                        input.input-fale-conosco(type="text" placeholder="Telefone")
-                        input.input-fale-conosco.input-fale-conosco-direita(type="text" placeholder="Empresa")
-                        select.input-fale-conosco(type="text" name="tipo-de-cliente" id="tipo-de-cliente")
-                            option(value="credenciado") Profissional Credenciado
-                            option(value="nao-credenciado") Profissional não Credenciado
-                            option(value="cliente") Cliente
-                        input.input-fale-conosco.input-fale-conosco-direita(type="text" placeholder="Assunto")
-
-                        textarea.mensagem-fale-conosco(name="mensagem", cols="30", rows="10" placeholder="Mensagem")
-                    .text-center.pd-80-bottom.pd-40-top
+                        .form-group
+                            label.label-fale-conosco(for="Nome") Nome
+                            input.form-control(type="text" id="Nome", placeholder="Seu Nome")
+                        .form-group
+                            label(for="e-mail") E-mail
+                            input.form-control(type="email" id="e-mail", placeholder="exemplo@email.com")
+                        .form-group
+                            label(for="telefone") Telefone
+                            input.form-control(type="text" id="telefone", placeholder="00 00000 0000")
+                        .form-group
+                            label(for="Empresa") Empresa
+                            input.form-control(type="text" id="Empresa", placeholder="Sua Empresa")                      
+                        select.form-control(name="Categoria")
+                            option(value="Categoria") Profissional Credenciado
+                            option(value="Categoria") Profissional não Credenciado
+                            option(value="Categoria") Cliente
+                        .form-group
+                            label(for="Assunto") Assunto
+                            input.form-control(type="text" id="Assunto", placeholder="Sua Empresa") 
+                        
+                        textarea.form-control(name="mensagem", cols="30", rows="10")
                         button.uppercase.botao-fale-conosco enviar 
+
+
                         
 
            

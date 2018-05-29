@@ -2102,6 +2102,11 @@ img.active {
   height: 40px;
   font-size: 20px;
 }
+.titulo-resultados {
+  margin-top: 0;
+  font-size: 60px;
+  letter-spacing: 5px;
+}
 @media screen and (max-width: 800px) {
   .botao-resutados {
     width: 40%;
@@ -2114,36 +2119,8 @@ img.active {
     height: 60px;
   }
 }
-.input-fale-conosco-full {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 20px;
-  border: 2px solid #005620;
-}
-.input-fale-conosco-full:focus {
-  border: 2px solid #00ab40;
-}
-.input-fale-conosco {
-  width: 49%;
-  height: 40px;
-  margin-bottom: 20px;
-  border: 2px solid #005620;
-  float: left;
-}
-.input-fale-conosco:focus {
-  border: 2px solid #00ab40;
-}
-.input-fale-conosco-direita {
-  margin-left: 10px;
-}
-.mensagem-fale-conosco {
-  width: 100%;
-  border: 2px solid #005620;
-  text-align: center;
-  padding-top: 20px;
-}
-.mensagem-fale-conosco:focus {
-  border: 2px solid #00ab40;
+.label-fale-conosco {
+  margin: 10px;
 }
 .botao-fale-conosco {
   margin: auto;
