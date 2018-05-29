@@ -110,33 +110,52 @@
           </div>
           <div class="col-sm-12 col-xs-12 col-md-6">
             <div class="pd-40-top">
+              <h2 class="text-main text-center pd-60-top pd-60-bottom inativar-titulo">Enviar mensagem</h2>
               <div class="form-group">
-                <label class="label-fale-conosco" for="Nome">Nome</label>
-                <input class="form-control" type="text" id="Nome" placeholder="Seu Nome">
+                <div class="col-sm-12 formulario">
+                  <label class="label-fale-conosco" for="Nome">Nome</label>
+                  <input class="borda form-control input-lg" type="text" id="Nome" placeholder="Seu Nome" style="border: 2px solid #005620;">
+                </div>
               </div>
               <div class="form-group">
-                <label for="e-mail">E-mail</label>
-                <input class="form-control" type="email" id="e-mail" placeholder="exemplo@email.com">
+                <div class="col-sm-12 formulario">
+                  <label for="e-mail">E-mail</label>
+                  <input class="borda form-control input-lg" type="email" id="e-mail" placeholder="exemplo@email.com" style="border: 2px solid #005620;">
+                </div>
               </div>
               <div class="form-group">
-                <label for="telefone">Telefone</label>
-                <input class="form-control" type="text" id="telefone" placeholder="00 00000 0000">
+                <div class="col-sm-6 formulario">
+                  <label for="telefone">Telefone</label>
+                  <input class="borda form-control input-lg" type="text" id="telefone" placeholder="XX 00000-0000" style="border: 2px solid #005620;">
+                </div>
               </div>
               <div class="form-group">
-                <label for="Empresa">Empresa</label>
-                <input class="form-control" type="text" id="Empresa" placeholder="Sua Empresa">
+                <div class="col-sm-6 formulario">
+                  <label for="Empresa">Empresa</label>
+                  <input class="borda form-control input-lg" type="text" id="Empresa" placeholder="Sua Empresa" style="border: 2px solid #005620;">
+                </div>
               </div>
-              <select class="form-control" name="Categoria">
-                <option value="Categoria">Profissional Credenciado</option>
-                <option value="Categoria">Profissional não Credenciado</option>
-                <option value="Categoria">Cliente</option>
-              </select>
+              <div class="col-sm-6 formulario">
+                <label for="categoria">Categoria</label>
+                <select class="borda form-control input-lg" name="Categoria" id="categoria" style="border: 2px solid #005620;">
+                  <option value="Categoria">Profissional Credenciado</option>
+                  <option value="Categoria">Profissional não Credenciado</option>
+                  <option value="Categoria">Cliente</option>
+                </select>
+              </div>
               <div class="form-group">
-                <label for="Assunto">Assunto</label>
-                <input class="form-control" type="text" id="Assunto" placeholder="Sua Empresa">
+                <div class="col-sm-6 formulario">
+                  <label for="Assunto">Assunto</label>
+                  <input class="input-lg borda form-control" type="text" id="Assunto" placeholder="Sua Empresa" style="border: 2px solid #005620;">
+                </div>
               </div>
-              <textarea class="form-control" name="mensagem" cols="30" rows="10"></textarea>
-              <button class="uppercase botao-fale-conosco">enviar </button>
+              <div class="col-sm-12 formulario">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="input-lg borda form-control" name="mensagem" cols="30" rows="10" id="mensagem" placeholder="Digite sua mensagem" style="border: 2px solid #005620;"></textarea>
+              </div>
+              <div class="text-center">
+                <button class="uppercase botao-fale-conosco">enviar </button>
+              </div>
             </div>
           </div>
         </div>
