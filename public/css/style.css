@@ -1140,6 +1140,10 @@ header .rede-sociais > a {
   background-size: contain;
   height: 2px;
 }
+#spinner {
+  display: none;
+  margin: auto;
+}
 .leort-image-text {
   padding-top: 180px;
   padding-left: 30px;
