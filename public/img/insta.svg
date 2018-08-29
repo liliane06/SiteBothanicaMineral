@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ñëîé_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_5_);}
+	.st1{clip-path:url(#SVGID_6_);fill:url(#SVGID_7_);}
+	.st2{clip-path:url(#SVGID_12_);}
+	.st3{clip-path:url(#SVGID_13_);fill:url(#SVGID_14_);}
+	.st4{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<g>
+			<defs>
+				<polygon id="SVGID_1_" points="16.5,16.5 18.1,16.5 16.5,18.1 				"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_3_" points="16.5,16.5 18.1,16.5 16.5,18.1 				"/>
+			</defs>
+			<defs>
+				<polygon id="SVGID_4_" points="13.5,13.5 11.9,13.5 13.5,11.9 				"/>
+			</defs>
+			<clipPath id="SVGID_5_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			</clipPath>
+			<clipPath id="SVGID_6_" class="st0">
+				<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="SVGID_7_" cx="-2823.2844" cy="14987.5674" r="401.0038" gradientTransform="matrix(1.2456 0 0 0.1074 609.2216 749.9506)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#000000"/>
+			</radialGradient>
+			<ellipse class="st1" cx="-2907.5" cy="2359.6" rx="499.4" ry="43.1"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<g>
+			<defs>
+				<polygon id="SVGID_8_" points="16.5,16.5 18.1,16.5 16.5,18.1 				"/>
+			</defs>
+			<clipPath id="SVGID_9_">
+				<use xlink:href="#SVGID_8_"  style="overflow:visible;"/>
+			</clipPath>
+		</g>
+		<g>
+			<defs>
+				<polygon id="SVGID_10_" points="16.5,16.5 18.1,16.5 16.5,18.1 				"/>
+			</defs>
+			<defs>
+				<polygon id="SVGID_11_" points="13.5,13.5 11.9,13.5 13.5,11.9 				"/>
+			</defs>
+			<clipPath id="SVGID_12_">
+				<use xlink:href="#SVGID_10_"  style="overflow:visible;"/>
+			</clipPath>
+			<clipPath id="SVGID_13_" class="st2">
+				<use xlink:href="#SVGID_11_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<radialGradient id="SVGID_14_" cx="-1647.4532" cy="14987.5674" r="401.0038" gradientTransform="matrix(1.2456 0 0 0.1074 609.2216 749.9506)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#000000"/>
+			</radialGradient>
+			<ellipse class="st3" cx="-1442.8" cy="2359.6" rx="499.4" ry="43.1"/>
+		</g>
+	</g>
+</g>
+<g>
+	<path class="st4" d="M19.7,26.9h-9.4c-1.8,0-3.7-0.8-5.1-2.2c-1.4-1.4-2.2-3.1-2.2-5.1v-9.4c0-1.8,0.8-3.7,2.2-5.1s3.1-2.2,5.1-2.2
+		h9.4c1.8,0,3.7,0.8,5.1,2.2c1.4,1.4,2.2,3.1,2.2,5.1v9.4c0,1.8-0.8,3.7-2.2,5.1C23.2,26.2,21.5,26.9,19.7,26.9z M10.2,5.2
+		c-2.8,0-5.2,2.3-5.2,5.2v9.4c0,2.8,2.3,5.2,5.2,5.2h9.4c2.8,0,5.2-2.3,5.2-5.2v-9.4c0-2.8-2.3-5.2-5.2-5.2H10.2z"/>
+	<path class="st4" d="M14.9,21.1c-3.4,0-6-2.8-6-6s2.8-6,6-6s6,2.8,6,6S18.3,21.1,14.9,21.1z M14.9,11.1c-2.3,0-4,1.8-4,4
+		c0,2.3,1.8,4,4,4c2.3,0,4-1.8,4-4C18.9,12.8,17.2,11.1,14.9,11.1z"/>
+	<circle class="st4" cx="21.1" cy="8.9" r="1.2"/>
+</g>
+</svg>

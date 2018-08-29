@@ -72,6 +72,8 @@ img.active
     display: flex
     flex-wrap: wrap
 
+.tamanho-cat
+    max-height: 200px
 
 @media screen and (max-width: 700px)
     .cat-produtos
@@ -80,6 +82,9 @@ img.active
     .texto-cat
         width 50%
 
+    .produto-flex
+        &>*
+            margin-bottom: 60px
 
 @media screen and (max-width: 320px)  
     .texto-cat

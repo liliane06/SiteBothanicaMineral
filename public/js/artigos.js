@@ -2,7 +2,7 @@
 (function($){
 window.addEventListener("load", function(){
     $("#spinner").toggle();
-    $.get("http://blog.bm.com.vc/wp-json/wp/v2/posts?_embed&per_page=3", function(a){
+    $.get("https://blog.bm.com.vc/wp-json/wp/v2/posts?_embed&per_page=3", function(a){
         artigos(a);
     })
     .always(function(){
