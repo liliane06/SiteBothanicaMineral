@@ -1,5 +1,6 @@
 block settings
     - var title = 'Bothanica Mineral®'
+    - var version = "?v=1.0.0"
 doctype
 html(lang="pt")
     head
@@ -13,10 +14,10 @@ html(lang="pt")
 
     body
         #loader
-            img.loader-img.img-responsive(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/Icon/Icon+72.png", alt="Lodder")
+            img.loader-img.img-responsive(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/Icon/Icon+72.png"  + version, alt="Lodder")
         .ir-topo#ir-topo(style="display:none")
             a#ir-topos(href="#c-banner", class="goesTo")
-                img(class="seta",src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/seta.png", alt="Voltar ao topo")
+                img(class="seta",src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/seta.png"  + version, alt="Voltar ao topo")
         // NAVEGAÇÃO
         include ../_partials/nav.pug                     
 
@@ -62,18 +63,18 @@ html(lang="pt")
                     .col-sm-2.col-md-4
                         .footer-texto.logo-footer
                             a(href="https://www.bothanicamineral.com.br/" target="_blank")
-                                img(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/site/logo.png", alt="Logo Bothanica Mineral", srcset="")
+                                img(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/site/logo.png"  + version, alt="Logo Bothanica Mineral", srcset="")
                             .redes-sociais-footer
-                                a(href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank",  rel="noopener")
-                                    img.img-resposive(src="img/insta.svg", alt="Facebook")
+                                a(href="https://www.instagram.com/bothanicamineral/?hl=pt" target="_blank"  + version,  rel="noopener")
+                                    img.img-resposive(src="img/insta.svg"  + version, alt="Facebook")
                                 a(href="https://www.youtube.com/channel/UCXt09yqtrEngqUL8KANHuDA" target="_blank",  rel="noopener")
-                                    img.img-resposive(src="img/youtube.svg", alt="Facebook")
+                                    img.img-resposive(src="img/youtube.svg"  + version, alt="Facebook")
                                 a(href="https://www.facebook.com/Bothanicamineral/" target="_blank",  rel="noopener")
-                                    img.img-resposive(src="img/face.svg", alt="Facebook")
+                                    img.img-resposive(src="img/face.svg"  + version, alt="Facebook")
                 
                 .container-fluid.logo-biz
                         a(href="https://www.happybiz.com.br/" target="_blank")
-                            img.logo-biz-img(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/site/logo-biz.png", alt="HappyBiz")
+                            img.logo-biz-img(src="https://s3-sa-east-1.amazonaws.com/happybiz-web/BOTHANICA+MINERAL/site/logo-biz.png"  + version, alt="HappyBiz")
 
 
 

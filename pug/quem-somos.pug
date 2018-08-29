@@ -12,8 +12,8 @@ block content
         .container
             h2.text-uppercase.text-main.text-center Conheça a tecnologia dos nosso produtos
             .banner-pag-tecnologia.pd-20-top
-                img.img-responsive(src="img/tec.png", alt="Produtos BM")
-        img.img-responsive.bandeira-tec(src="img/tag-bm.png", alt="Bothanica Mineral")
+                img.img-responsive(src="img/tec.png"  + version, alt="Produtos BM")
+        img.img-responsive.bandeira-tec(src="img/tag-bm.png"  + version, alt="Bothanica Mineral")
 
     section.pd-60-top
         .container
@@ -39,8 +39,8 @@ block content
 
 
     // objetos não visiveis na tela
-    img(src="img/linha-dourada.png", alt="linha dourada", class="hidden", id="dourado")
-    img(src="img/brilho.png", alt="linha dourada", class="hidden", id="shiny")
+    img(src="img/linha-dourada.png"  + version, alt="linha dourada", class="hidden", id="dourado")
+    img(src="img/brilho.png"  + version, alt="linha dourada", class="hidden", id="shiny")
 
 
 
