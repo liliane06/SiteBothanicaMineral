@@ -12,7 +12,8 @@ window.addEventListener("load", function(){
     function artigos(retorno){
         retorno.forEach(function(el) {
             var artigo = `
-            <div class="col-sm-4 item-artigos text-left"><img class="img-responsive" src="${el._embedded["wp:featuredmedia"]  ?  el._embedded["wp:featuredmedia"][0].source_url : "http://blog.bm.com.vc/wp-content/themes/bmblog/img/default-img.jpg"}" alt="Blog">
+            <div class="col-sm-4 item-artigos text-left">
+                <img class="img-responsive" src="${el._embedded["wp:featuredmedia"]  ?  el._embedded["wp:featuredmedia"][0].source_url : "https://blog.bm.com.vc/wp-content/themes/bmblog/img/default-img.jpg"}" alt="Blog">
                 <h4 class="text-main titulo">${el.title.rendered}</h4>
                 <p>
                 ${el.excerpt.rendered}

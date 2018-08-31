@@ -1,6 +1,6 @@
 block settings
     - var title = 'Bothanica Mineral®'
-    - var version = "?v=1.0.0"
+    - var version = "?v=1.0.1"
 doctype
 html(lang="pt")
     head
@@ -11,6 +11,9 @@ html(lang="pt")
             link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
             link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
             link(rel="stylesheet", href="css/plugins.css")
+            // Global site tag (gtag.js) - Google Analytics
+            script(async src="https://www.googletagmanager.com/gtag/js?id=UA-124901633-1")
+            script(src="js/gtag.js")
 
     body
         #loader
@@ -35,26 +38,26 @@ html(lang="pt")
                         h4.bold Institucional
                         ul.footer-texto
                             li 
-                                a(href="tecnologia.html" ) Quem Somos
+                                a(href="/tecnologia" ) Quem Somos
                             li 
-                                a(href="produtos.html", class="goesTo") Produtos
+                                a(href="/produtos", class="goesTo") Produtos
                             li 
-                                a(href="cursos.html", class="goesTo") Cursos
+                                a(href="/cursos", class="goesTo") Cursos
                             li 
                                 a(href="http://blog.bm.com.vc" rel="noopener", target="_blank") Blog
                             li 
                                 a(href="http://blog.bm.com.vc/resultados/", rel="noopener", target="_blank") Resultados
                             li 
-                                a( href="http://bm.com.vc", rel="noopener", target="_blank") Credenciar
+                                a( href="http://bm.com.vc") Credenciar
+                            //li 
+                                a( href="#") Internacional
                             li 
-                                a( href="#", rel="noopener", target="_blank") Internacional
-                            li 
-                                a(href="fale-conosco.html", class="goesTo") Fale conosco
+                                a(href="/fale-conosco", class="goesTo") Fale conosco
                     .col-sm-3.col-md-2
                         h4.bold Profissional
                         ul.footer-texto
                             li 
-                                a(href="cursos.html" target="_blank") Cursos
+                                a(href="/cursos" target="_blank") Cursos
 
                     .col-sm-4.col-md-4
                         h5.bold #BOTHANICA MINERAL

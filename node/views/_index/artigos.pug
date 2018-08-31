@@ -1,0 +1,22 @@
+.container
+    .row
+        .col-sm-12
+            h2.pd-20-top.text-center.mainTitle Artigos
+    .row.artigos#artigos.text-center
+        img#spinner.center-block(src="img/flor-bm.png"  + version, alt="carregando")
+        each artigo in artigos
+            .col-sm-4.item-artigos.text-left
+                if artigo._embedded["wp:featuredmedia"]
+                    img.img-responsive(src=artigo._embedded["wp:featuredmedia"][0].source_url, alt="Blog", srcset="")
+                else
+                    img.img-responsive(src='https://blog.bm.com.vc/wp-content/themes/bmblog/img/default-img.jpg', alt="Blog", srcset="")
+                h4.text-main.titulo= artigo.title.rendered
+                p !{artigo.excerpt.rendered}
+                p
+                    a(href=artigo.link) Saiba Mais
+
+    .row
+        .col-sm-12.text-center
+            hr
+            h4
+                a.center-block(href="https://blog.bm.com.vc/", rel="noopener", target="_blank") Veja todos

@@ -15,6 +15,7 @@
 		prevArrow: '<img src="img/seta-cat-left.png" class="seta-left" />"',
       });
       
+      
 
 
     $('.goesTo, .link-footer').on('click', function (event) {
