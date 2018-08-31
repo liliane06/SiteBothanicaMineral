@@ -3,13 +3,13 @@ extends ./_layouts/bm.pug
 block append CSS
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css")
-    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="/css/style.css")
     
 
 block content
 
     section#banners.relative
-        img.bandeira(src="img/tag-bm.png"  + version, alt="Bothanica Mineral")
+        img.bandeira(src="/img/tag-bm.png"  + version, alt="Bothanica Mineral")
         include ./_index/banners.pug                            
 
 
@@ -30,6 +30,6 @@ block content
 
 block append scriptsJS
     script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js", type="text/javascript")
-    script(src="js/app.js")
+    script(src="/js/app.js")
 
 
